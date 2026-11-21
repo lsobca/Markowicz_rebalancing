@@ -11,7 +11,8 @@ vyžaduje výslovné potvrdenie používateľa podľa AGENTS.md.
    anualizácia, report kvality a oneskorenie bezrizikovej sadzby.
 4. **Napísané, nespustené:** Markowitz optimalizácia cez CLARABEL,
    regularizácia, okná, lagovaná sadzba, núdzové pravidlo, filter a koncentrácia.
-5. Päť stratégií, časovanie, účtovanie, poplatky a obrat.
+5. **Napísané, nespustené:** päť stratégií, next-close exekúcie,
+   účtovanie po poplatkoch, nezáporná hotovosť, drift a oddelené počty/obrat.
 6. Metriky, podperiódy a štyri statické grafy.
 7. Orchestrácia, notebook a generátor záverov; budúce spustenie jedným príkazom.
 8. Zdrojové súbory offline testov so syntetickými vstupmi, bez spustenia.

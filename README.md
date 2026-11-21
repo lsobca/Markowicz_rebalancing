@@ -4,13 +4,13 @@ Python výskumný projekt: ako frekvencia opakovaného odhadu Markowitzových v�
 spolu s rebalansovaním ovplyvňuje výnos, riziko a náklady v rokoch 2011–2025.
 Autoritatívna metodika a etapový postup sú v [AGENTS.md](AGENTS.md).
 
-**Stav: etapa 4 — kostra, sťahovanie/univerzum, preprocessing a optimalizátor.
+**Stav: etapa 5 — kostra, dátové moduly, optimalizátor a backtest engine.
 Žiadny analytický kód, downloader, test,
 notebook, inštalácia závislostí, sťahovanie finančných dát ani backtest neboli
 spustené. Konfigurácia a závislosti nie sú validačne overené. Výsledky neexistujú.**
 Podrobnosti cache a manifestov sú v [proveniencii](data/provenance/README.md).
 Moduly `src/universe.py`, `src/download_data.py`, `src/preprocessing.py`
-a `src/optimization.py` zatiaľ neboli spustené
+a `src/optimization.py`, spolu s `src/backtest.py`, zatiaľ neboli spustené
 ani syntaxou či testami overené. Príkaz na kompletné budúce spustenie pribudne až v etape 7; projekt zatiaľ
 nie je spustiteľný. Žiadny dashboard, web ani GUI nie sú súčasťou zadania.
 
@@ -87,6 +87,23 @@ Chýbajúce ceny sa nedopĺňajú vpred ani vzad, nenahrádzajú nulou a nevyvol
 fiktívny predaj. Neskorší výpadok vybranej akcie zastaví analýzu s chybou.
 
 ## Časovanie a účtovanie
+
+Etapa 5 pridáva explicitné `run_backtest(data, stable_ids, config)`.
+Vracia tabuľky hodnôt, úvodných váh, denných driftujúcich váh a pozícií,
+obchodov, udalostí, optimalizačných diagnostík a kalendára. Nič automaticky
+nespúšťa ani neexportuje. Úvodná alokácia aj exekúcia sa vypočítajú raz
+a rovnako použijú pre všetkých päť samostatných účtov.
+Naplánované rebalansovania sa v kumulatívnych počtoch počítajú podľa
+exekúcií vo vzorke; posledné signály s exekúciou až v roku 2026 sú zachované
+v kalendári ako nevykonané a nezvyšujú tieto počty.
+
+Pozície sú zlomkové jednotky upraveného total-return cenového proxy,
+nie rekonštrukcia právnych počtov akcií a dividendových peňažných tokov.
+Zvyšková numerická hotovosť zostáva nezáporná a nenesie úrok.
+Bisection používa finančne realizovateľnú dolnú hranicu; poplatky sa
+počítajú zo skutočných reprezentovateľných zmien pozícií. Každý nenulový
+obchod sa započíta, bez minimálneho príkazu. Kontrola účtovnej rovnosti
+má absolútnu toleranciu 1e-8 USD; zlyhanie zastaví výpočet.
 
 Signál vzniká pri close poslednej skutočnej seansy obdobia, iba z dovtedy
 známych dát. Obchod sa vykoná pri close nasledujúcej seansy a ovplyvní až
