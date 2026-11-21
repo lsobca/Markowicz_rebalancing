@@ -85,3 +85,24 @@ def test_http_backoff_and_cached_fred_failure(config, tmp_path, monkeypatch):
     with pytest.warns(UserWarning, match='validated cache'):
         actual, _ = downloader.http(url, lambda b: parse_fred(b, '2004-12-20', '2025-12-31'), 'FRED')
     assert actual == payload
+
+
+def test_unresolved_tickers_retry_in_bounded_batches(config, tmp_path, monkeypatch):
+    import src.download_data as module
+    config['download']['max_attempts'] = 2
+    config['download']['ticker_batch_size'] = 2
+    calls = []
+    dates = pd.to_datetime(['2004-12-31', '2005-01-03', '2011-01-03'])
+    def fake_download(tickers, **kwargs):
+        calls.append(list(tickers))
+        assert kwargs['auto_adjust'] is False
+        values = [100., 101., float('nan') if len(calls) == 1 else 102.]
+        frame = pd.DataFrame({('Adj Close', t): values for t in tickers}, index=dates)
+        frame.columns = pd.MultiIndex.from_tuples(frame.columns)
+        return frame
+    monkeypatch.setattr(module.yf, 'download', fake_download)
+    client = Downloader(config, tmp_path, sleep=lambda seconds: None)
+    prices, errors = client.fetch_prices(['A', 'B'], dates[1:], dates[0])
+    assert calls == [['A', 'B'], ['A', 'B']]
+    assert set(prices) == {'A', 'B'}
+    assert all(coverage_record(series, dates[1:], dates[0])['eligible_history'] for series in prices.values())

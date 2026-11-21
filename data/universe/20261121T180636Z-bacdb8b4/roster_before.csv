@@ -1,0 +1,504 @@
+original_ticker,security_name,sector,issuer_id,yahoo_ticker,source_url,retrieved_at_utc,universe_mode,bias_label
+A,Agilent Technologies,Health Care,0001090872,A,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+AAPL,Apple Inc.,Information Technology,0000320193,AAPL,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ABBV,AbbVie,Health Care,0001551152,ABBV,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ABNB,Airbnb,Consumer Discretionary,0001559720,ABNB,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ABT,Abbott Laboratories,Health Care,0000001800,ABT,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ACGL,Arch Capital Group,Financials,0000947484,ACGL,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ACN,Accenture,Information Technology,0001467373,ACN,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ADBE,Adobe Inc.,Information Technology,0000796343,ADBE,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ADI,Analog Devices,Information Technology,0000006281,ADI,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ADM,Archer Daniels Midland,Consumer Staples,0000007084,ADM,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ADP,Automatic Data Processing,Industrials,0000008670,ADP,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ADSK,Autodesk,Information Technology,0000769397,ADSK,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+AEE,Ameren,Utilities,0001002910,AEE,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+AEP,American Electric Power,Utilities,0000004904,AEP,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+AES,AES Corporation,Utilities,0000874761,AES,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+AFL,Aflac,Financials,0000004977,AFL,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+AIG,American International Group,Financials,0000005272,AIG,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+AIZ,Assurant,Financials,0001267238,AIZ,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+AJG,Arthur J. Gallagher & Co.,Financials,0000354190,AJG,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+AKAM,Akamai Technologies,Information Technology,0001086222,AKAM,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ALB,Albemarle Corporation,Materials,0000915913,ALB,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ALGN,Align Technology,Health Care,0001097149,ALGN,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ALL,Allstate,Financials,0000899051,ALL,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ALLE,Allegion,Industrials,0001579241,ALLE,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+AMAT,Applied Materials,Information Technology,0000006951,AMAT,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+AMCR,Amcor,Materials,0001748790,AMCR,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+AMD,Advanced Micro Devices,Information Technology,0000002488,AMD,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+AME,Ametek,Industrials,0001037868,AME,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+AMGN,Amgen,Health Care,0000318154,AMGN,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+AMP,Ameriprise Financial,Financials,0000820027,AMP,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+AMT,American Tower,Real Estate,0001053507,AMT,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+AMZN,Amazon,Consumer Discretionary,0001018724,AMZN,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ANET,Arista Networks,Information Technology,0001596532,ANET,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+AON,Aon plc,Financials,0000315293,AON,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+AOS,A. O. Smith,Industrials,0000091142,AOS,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+APA,APA Corporation,Energy,0001841666,APA,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+APD,Air Products,Materials,0000002969,APD,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+APH,Amphenol,Information Technology,0000820313,APH,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+APO,Apollo Global Management,Financials,0001858681,APO,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+APP,AppLovin,Communication Services,0001751008,APP,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+APTV,Aptiv,Consumer Discretionary,0001521332,APTV,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ARE,Alexandria Real Estate Equities,Real Estate,0001035443,ARE,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ARES,Ares Management,Financials,0001176948,ARES,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ATO,Atmos Energy,Utilities,0000731802,ATO,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+AVGO,Broadcom,Information Technology,0001730168,AVGO,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+AVY,Avery Dennison,Materials,0000008818,AVY,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+AWK,American Water Works,Utilities,0001410636,AWK,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+AXON,Axon Enterprise,Industrials,0001069183,AXON,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+AXP,American Express,Financials,0000004962,AXP,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+AZO,AutoZone,Consumer Discretionary,0000866787,AZO,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+BA,Boeing,Industrials,0000012927,BA,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+BAC,Bank of America,Financials,0000070858,BAC,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+BALL,Ball Corporation,Materials,0000009389,BALL,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+BAX,Baxter International,Health Care,0000010456,BAX,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+BBY,Best Buy,Consumer Discretionary,0000764478,BBY,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+BDX,Becton Dickinson,Health Care,0000010795,BDX,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+BE,Bloom Energy,Industrials,0001664703,BE,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+BEN,Franklin Resources,Financials,0000038777,BEN,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+BF.B,Brown–Forman,Consumer Staples,0000014693,BF-B,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+BG,Bunge Global,Consumer Staples,0001996862,BG,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+BIIB,Biogen,Health Care,0000875045,BIIB,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+BKNG,Booking Holdings,Consumer Discretionary,0001075531,BKNG,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+BKR,Baker Hughes,Energy,0001701605,BKR,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+BLK,BlackRock,Financials,0002012383,BLK,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+BMY,Bristol Myers Squibb,Health Care,0000014272,BMY,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+BNY,BNY Mellon,Financials,0001390777,BNY,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+BR,Broadridge Financial Solutions,Industrials,0001383312,BR,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+BRK.B,Berkshire Hathaway,Financials,0001067983,BRK-B,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+BRO,Brown & Brown,Financials,0000079282,BRO,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+BSX,Boston Scientific,Health Care,0000885725,BSX,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+BX,Blackstone Inc.,Financials,0001393818,BX,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+BXP,"BXP, Inc.",Real Estate,0001037540,BXP,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+C,Citigroup,Financials,0000831001,C,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CAH,Cardinal Health,Health Care,0000721371,CAH,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CARR,Carrier Global,Industrials,0001783180,CARR,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CASY,Casey's,Consumer Staples,0000726958,CASY,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CAT,Caterpillar Inc.,Industrials,0000018230,CAT,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CB,Chubb Limited,Financials,0000896159,CB,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CBOE,Cboe Global Markets,Financials,0001374310,CBOE,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CBRE,CBRE Group,Real Estate,0001138118,CBRE,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CCI,Crown Castle,Real Estate,0001051470,CCI,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CCL,Carnival Corporation,Consumer Discretionary,0000815097,CCL,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CDNS,Cadence Design Systems,Information Technology,0000813672,CDNS,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CDW,CDW Corporation,Information Technology,0001402057,CDW,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CEG,Constellation Energy,Utilities,0001868275,CEG,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CF,CF Industries,Materials,0001324404,CF,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CFG,Citizens Financial Group,Financials,0000759944,CFG,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CHD,Church & Dwight,Consumer Staples,0000313927,CHD,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CHRW,C.H. Robinson,Industrials,0001043277,CHRW,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CHTR,Charter Communications,Communication Services,0001091667,CHTR,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CI,Cigna,Health Care,0001739940,CI,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CIEN,Ciena,Information Technology,0000936395,CIEN,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CINF,Cincinnati Financial,Financials,0000020286,CINF,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CL,Colgate-Palmolive,Consumer Staples,0000021665,CL,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CLX,Clorox,Consumer Staples,0000021076,CLX,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CMCSA,Comcast,Communication Services,0001166691,CMCSA,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CME,CME Group,Financials,0001156375,CME,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CMG,Chipotle Mexican Grill,Consumer Discretionary,0001058090,CMG,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CMI,Cummins,Industrials,0000026172,CMI,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CMS,CMS Energy,Utilities,0000811156,CMS,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CNC,Centene Corporation,Health Care,0001071739,CNC,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CNP,CenterPoint Energy,Utilities,0001130310,CNP,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+COF,Capital One,Financials,0000927628,COF,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+COHR,Coherent Corp.,Information Technology,0000820318,COHR,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+COIN,Coinbase,Financials,0001679788,COIN,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+COO,Cooper Companies (The),Health Care,0000711404,COO,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+COP,ConocoPhillips,Energy,0001163165,COP,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+COR,Cencora,Health Care,0001140859,COR,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+COST,Costco,Consumer Staples,0000909832,COST,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CPAY,Corpay,Financials,0001175454,CPAY,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CPRT,Copart,Industrials,0000900075,CPRT,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CPT,Camden Property Trust,Real Estate,0000906345,CPT,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CRH,CRH plc,Materials,0000849395,CRH,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CRL,Charles River Laboratories,Health Care,0001100682,CRL,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CRM,Salesforce,Information Technology,0001108524,CRM,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CRWD,CrowdStrike,Information Technology,0001535527,CRWD,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CSCO,Cisco,Information Technology,0000858877,CSCO,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CSGP,CoStar Group,Real Estate,0001057352,CSGP,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CSX,CSX Corporation,Industrials,0000277948,CSX,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CTAS,Cintas,Industrials,0000723254,CTAS,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CTSH,Cognizant,Information Technology,0001058290,CTSH,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CVNA,Carvana,Consumer Discretionary,0001690820,CVNA,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CVS,CVS Health,Health Care,0000064803,CVS,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+CVX,Chevron Corporation,Energy,0000093410,CVX,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+D,Dominion Energy,Utilities,0000715957,D,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+DAL,Delta Air Lines,Industrials,0000027904,DAL,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+DASH,DoorDash,Consumer Discretionary,0001792789,DASH,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+DD,DuPont,Industrials,0001666700,DD,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+DDOG,Datadog,Information Technology,0001561550,DDOG,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+DE,Deere & Company,Industrials,0000315189,DE,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+DECK,Deckers Brands,Consumer Discretionary,0000910521,DECK,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+DELL,Dell Technologies,Information Technology,0001571996,DELL,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+DG,Dollar General,Consumer Staples,0000029534,DG,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+DGX,Quest Diagnostics,Health Care,0001022079,DGX,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+DHI,D. R. Horton,Consumer Discretionary,0000882184,DHI,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+DHR,Danaher Corporation,Health Care,0000313616,DHR,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+DIS,Walt Disney Company (The),Communication Services,0001744489,DIS,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+DLR,Digital Realty,Real Estate,0001297996,DLR,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+DLTR,Dollar Tree,Consumer Staples,0000935703,DLTR,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+DOC,Healthpeak Properties,Real Estate,0000765880,DOC,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+DOV,Dover Corporation,Industrials,0000029905,DOV,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+DOW,Dow Inc.,Materials,0001751788,DOW,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+DPZ,Domino's,Consumer Discretionary,0001286681,DPZ,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+DRI,Darden Restaurants,Consumer Discretionary,0000940944,DRI,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+DTE,DTE Energy,Utilities,0000936340,DTE,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+DUK,Duke Energy,Utilities,0001326160,DUK,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+DVA,DaVita,Health Care,0000927066,DVA,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+DVN,Devon Energy,Energy,0001090012,DVN,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+DXCM,Dexcom,Health Care,0001093557,DXCM,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+EBAY,eBay Inc.,Consumer Discretionary,0001065088,EBAY,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ECHO,EchoStar,Communication Services,0001415404,ECHO,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ECL,Ecolab,Materials,0000031462,ECL,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ED,Consolidated Edison,Utilities,0001047862,ED,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+EFX,Equifax,Industrials,0000033185,EFX,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+EG,Everest Group,Financials,0001095073,EG,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+EIX,Edison International,Utilities,0000827052,EIX,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+EL,Estée Lauder Companies (The),Consumer Staples,0001001250,EL,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ELV,Elevance Health,Health Care,0001156039,ELV,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+EME,Emcor,Industrials,0000105634,EME,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+EMR,Emerson Electric,Industrials,0000032604,EMR,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+EOG,EOG Resources,Energy,0000821189,EOG,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+EQIX,Equinix,Real Estate,0001101239,EQIX,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+EQT,EQT Corporation,Energy,0000033213,EQT,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ERIE,Erie Indemnity,Financials,0000922621,ERIE,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ES,Eversource Energy,Utilities,0000072741,ES,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ESS,Essex Property Trust,Real Estate,0000920522,ESS,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ETN,Eaton Corporation,Industrials,0001551182,ETN,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ETR,Entergy,Utilities,0000065984,ETR,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+EVRG,Evergy,Utilities,0001711269,EVRG,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+EW,Edwards Lifesciences,Health Care,0001099800,EW,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+EXC,Exelon,Utilities,0001109357,EXC,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+EXE,Expand Energy,Energy,0000895126,EXE,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+EXPD,Expeditors International,Industrials,0000746515,EXPD,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+EXPE,Expedia Group,Consumer Discretionary,0001324424,EXPE,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+EXR,Extra Space Storage,Real Estate,0001289490,EXR,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+F,Ford Motor Company,Consumer Discretionary,0000037996,F,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+FANG,Diamondback Energy,Energy,0001539838,FANG,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+FAST,Fastenal,Industrials,0000815556,FAST,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+FCX,Freeport-McMoRan,Materials,0000831259,FCX,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+FDS,FactSet,Financials,0001013237,FDS,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+FDX,FedEx,Industrials,0001048911,FDX,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+FDXF,FedEx Freight,Industrials,0002082247,FDXF,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+FE,FirstEnergy,Utilities,0001031296,FE,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+FERG,Ferguson Enterprises,Industrials,0002011641,FERG,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+FFIV,"F5, Inc.",Information Technology,0001048695,FFIV,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+FICO,Fair Isaac,Information Technology,0000814547,FICO,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+FIS,Fidelity National Information Services,Financials,0001136893,FIS,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+FISV,Fiserv,Financials,0000798354,FISV,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+FITB,Fifth Third Bancorp,Financials,0000035527,FITB,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+FIX,Comfort Systems USA,Industrials,0001035983,FIX,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+FLEX,Flex Ltd.,Information Technology,0000866374,FLEX,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+FOX,Fox Corporation (Class B),Communication Services,0001754301,FOX,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+FOXA,Fox Corporation (Class A),Communication Services,0001754301,FOXA,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+FRT,Federal Realty Investment Trust,Real Estate,0000034903,FRT,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+FSLR,First Solar,Information Technology,0001274494,FSLR,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+FTNT,Fortinet,Information Technology,0001262039,FTNT,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+FTV,Fortive,Industrials,0001659166,FTV,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+GD,General Dynamics,Industrials,0000040533,GD,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+GDDY,GoDaddy,Information Technology,0001609711,GDDY,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+GE,GE Aerospace,Industrials,0000040545,GE,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+GEHC,GE HealthCare,Health Care,0001932393,GEHC,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+GEN,Gen Digital,Information Technology,0000849399,GEN,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+GEV,GE Vernova,Industrials,0001996810,GEV,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+GILD,Gilead Sciences,Health Care,0000882095,GILD,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+GIS,General Mills,Consumer Staples,0000040704,GIS,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+GL,Globe Life,Financials,0000320335,GL,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+GLW,Corning Inc.,Information Technology,0000024741,GLW,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+GM,General Motors,Consumer Discretionary,0001467858,GM,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+GNRC,Generac,Industrials,0001474735,GNRC,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+GOOG,Alphabet Inc. (Class C),Communication Services,0001652044,GOOG,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+GOOGL,Alphabet Inc. (Class A),Communication Services,0001652044,GOOGL,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+GPC,Genuine Parts Company,Consumer Discretionary,0000040987,GPC,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+GPN,Global Payments,Financials,0001123360,GPN,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+GRMN,Garmin,Consumer Discretionary,0001121788,GRMN,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+GS,Goldman Sachs,Financials,0000886982,GS,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+GWW,W. W. Grainger,Industrials,0000277135,GWW,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+HAL,Halliburton,Energy,0000045012,HAL,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+HAS,Hasbro,Consumer Discretionary,0000046080,HAS,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+HBAN,Huntington Bancshares,Financials,0000049196,HBAN,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+HCA,HCA Healthcare,Health Care,0000860730,HCA,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+HD,Home Depot (The),Consumer Discretionary,0000354950,HD,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+HIG,Hartford (The),Financials,0000874766,HIG,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+HII,Huntington Ingalls Industries,Industrials,0001501585,HII,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+HLT,Hilton Worldwide,Consumer Discretionary,0001585689,HLT,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+HON,Honeywell Technologies,Industrials,0000773840,HON,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+HONA,Honeywell Aerospace,Industrials,0002089271,HONA,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+HOOD,Robinhood Markets,Financials,0001783879,HOOD,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+HPE,Hewlett Packard Enterprise,Information Technology,0001645590,HPE,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+HPQ,HP Inc.,Information Technology,0000047217,HPQ,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+HRL,Hormel Foods,Consumer Staples,0000048465,HRL,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+HSIC,Henry Schein,Health Care,0001000228,HSIC,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+HST,Host Hotels & Resorts,Real Estate,0001070750,HST,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+HSY,Hershey Company (The),Consumer Staples,0000047111,HSY,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+HUBB,Hubbell Incorporated,Industrials,0000048898,HUBB,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+HUM,Humana,Health Care,0000049071,HUM,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+HWM,Howmet Aerospace,Industrials,0000004281,HWM,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+IBKR,Interactive Brokers,Financials,0001381197,IBKR,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+IBM,IBM,Information Technology,0000051143,IBM,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ICE,Intercontinental Exchange,Financials,0001571949,ICE,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+IDXX,Idexx Laboratories,Health Care,0000874716,IDXX,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+IEX,IDEX Corporation,Industrials,0000832101,IEX,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+IFF,International Flavors & Fragrances,Materials,0000051253,IFF,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ILMN,"Illumina, Inc.",Health Care,0001110803,ILMN,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+INCY,Incyte,Health Care,0000879169,INCY,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+INTC,Intel,Information Technology,0000050863,INTC,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+INTU,Intuit,Information Technology,0000896878,INTU,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+INVH,Invitation Homes,Real Estate,0001687229,INVH,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+IP,International Paper,Materials,0000051434,IP,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+IQV,IQVIA,Health Care,0001478242,IQV,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+IR,Ingersoll Rand,Industrials,0001699150,IR,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+IRM,Iron Mountain,Real Estate,0001020569,IRM,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ISRG,Intuitive Surgical,Health Care,0001035267,ISRG,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+IT,Gartner,Information Technology,0000749251,IT,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ITW,Illinois Tool Works,Industrials,0000049826,ITW,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+IVZ,Invesco,Financials,0000914208,IVZ,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+J,Jacobs Solutions,Industrials,0000052988,J,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+JBHT,J.B. Hunt,Industrials,0000728535,JBHT,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+JBL,Jabil,Information Technology,0000898293,JBL,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+JCI,Johnson Controls,Industrials,0000833444,JCI,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+JKHY,Jack Henry & Associates,Financials,0000779152,JKHY,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+JNJ,Johnson & Johnson,Health Care,0000200406,JNJ,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+JPM,JPMorgan Chase,Financials,0000019617,JPM,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+KDP,Keurig Dr Pepper,Consumer Staples,0001418135,KDP,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+KEY,KeyCorp,Financials,0000091576,KEY,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+KEYS,Keysight Technologies,Information Technology,0001601046,KEYS,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+KHC,Kraft Heinz,Consumer Staples,0001637459,KHC,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+KIM,Kimco Realty,Real Estate,0000879101,KIM,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+KKR,KKR & Co.,Financials,0001404912,KKR,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+KLAC,KLA Corporation,Information Technology,0000319201,KLAC,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+KMB,Kimberly-Clark,Consumer Staples,0000055785,KMB,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+KMI,Kinder Morgan,Energy,0001506307,KMI,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+KO,Coca-Cola Company (The),Consumer Staples,0000021344,KO,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+KR,Kroger,Consumer Staples,0000056873,KR,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+L,Loews Corporation,Financials,0000060086,L,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+LDOS,Leidos,Industrials,0001336920,LDOS,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+LEN,Lennar,Consumer Discretionary,0000920760,LEN,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+LH,Labcorp,Health Care,0000920148,LH,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+LHX,L3Harris,Industrials,0000202058,LHX,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+LII,Lennox International,Industrials,0001069202,LII,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+LIN,Linde plc,Materials,0001707925,LIN,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+LITE,Lumentum,Information Technology,0001633978,LITE,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+LLY,Lilly (Eli),Health Care,0000059478,LLY,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+LMT,Lockheed Martin,Industrials,0000936468,LMT,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+LNT,Alliant Energy,Utilities,0000352541,LNT,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+LOW,Lowe's,Consumer Discretionary,0000060667,LOW,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+LRCX,Lam Research,Information Technology,0000707549,LRCX,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+LULU,Lululemon Athletica,Consumer Discretionary,0001397187,LULU,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+LUV,Southwest Airlines,Industrials,0000092380,LUV,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+LVS,Las Vegas Sands,Consumer Discretionary,0001300514,LVS,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+LYB,LyondellBasell,Materials,0001489393,LYB,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+LYV,Live Nation Entertainment,Communication Services,0001335258,LYV,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+MA,Mastercard,Financials,0001141391,MA,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+MAA,Mid-America Apartment Communities,Real Estate,0000912595,MAA,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+MAR,Marriott International,Consumer Discretionary,0001048286,MAR,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+MAS,Masco,Industrials,0000062996,MAS,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+MCD,McDonald's,Consumer Discretionary,0000063908,MCD,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+MCHP,Microchip Technology,Information Technology,0000827054,MCHP,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+MCK,McKesson,Health Care,0000927653,MCK,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+MCO,Moody's Corporation,Financials,0001059556,MCO,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+MDLZ,Mondelez International,Consumer Staples,0001103982,MDLZ,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+MDT,Medtronic,Health Care,0001613103,MDT,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+MET,MetLife,Financials,0001099219,MET,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+META,Meta Platforms,Communication Services,0001326801,META,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+MGM,MGM Resorts,Consumer Discretionary,0000789570,MGM,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+MKC,McCormick & Company,Consumer Staples,0000063754,MKC,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+MLM,Martin Marietta Materials,Materials,0000916076,MLM,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+MMM,3M,Industrials,0000066740,MMM,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+MNST,Monster Beverage,Consumer Staples,0000865752,MNST,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+MO,Altria,Consumer Staples,0000764180,MO,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+MOS,Mosaic Company (The),Materials,0001285785,MOS,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+MPC,Marathon Petroleum,Energy,0001510295,MPC,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+MPWR,Monolithic Power Systems,Information Technology,0001280452,MPWR,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+MRK,Merck & Co.,Health Care,0000310158,MRK,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+MRNA,Moderna,Health Care,0001682852,MRNA,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+MRSH,Marsh McLennan,Financials,0000062709,MRSH,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+MRVL,Marvell Technology,Information Technology,0001835632,MRVL,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+MS,Morgan Stanley,Financials,0000895421,MS,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+MSCI,MSCI,Financials,0001408198,MSCI,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+MSFT,Microsoft,Information Technology,0000789019,MSFT,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+MSI,Motorola Solutions,Information Technology,0000068505,MSI,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+MTB,M&T Bank,Financials,0000036270,MTB,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+MTD,Mettler Toledo,Health Care,0001037646,MTD,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+MU,Micron Technology,Information Technology,0000723125,MU,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+NCLH,Norwegian Cruise Line Holdings,Consumer Discretionary,0001513761,NCLH,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+NDAQ,"Nasdaq, Inc.",Financials,0001120193,NDAQ,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+NDSN,Nordson Corporation,Industrials,0000072331,NDSN,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+NEE,NextEra Energy,Utilities,0000753308,NEE,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+NEM,Newmont,Materials,0001164727,NEM,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+NFLX,Netflix,Communication Services,0001065280,NFLX,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+NI,NiSource,Utilities,0001111711,NI,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+NKE,"Nike, Inc.",Consumer Discretionary,0000320187,NKE,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+NOC,Northrop Grumman,Industrials,0001133421,NOC,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+NOW,ServiceNow,Information Technology,0001373715,NOW,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+NRG,NRG Energy,Utilities,0001013871,NRG,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+NSC,Norfolk Southern,Industrials,0000702165,NSC,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+NTAP,NetApp,Information Technology,0001002047,NTAP,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+NTRS,Northern Trust,Financials,0000073124,NTRS,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+NUE,Nucor,Materials,0000073309,NUE,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+NVDA,Nvidia,Information Technology,0001045810,NVDA,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+NVR,"NVR, Inc.",Consumer Discretionary,0000906163,NVR,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+NWS,News Corp (Class B),Communication Services,0001564708,NWS,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+NWSA,News Corp (Class A),Communication Services,0001564708,NWSA,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+NXPI,NXP Semiconductors,Information Technology,0001413447,NXPI,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+O,Realty Income,Real Estate,0000726728,O,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ODFL,Old Dominion,Industrials,0000878927,ODFL,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+OKE,Oneok,Energy,0001039684,OKE,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+OKTA,"Okta, Inc.",Information Technology,0001660134,OKTA,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+OMC,Omnicom Group,Communication Services,0000029989,OMC,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ON,ON Semiconductor,Information Technology,0001097864,ON,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ORCL,Oracle Corporation,Information Technology,0001341439,ORCL,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ORLY,O'Reilly Automotive,Consumer Discretionary,0000898173,ORLY,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+OTIS,Otis Worldwide,Industrials,0001781335,OTIS,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+OXY,Occidental Petroleum,Energy,0000797468,OXY,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+P,Everpure,Information Technology,0001474432,P,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+PANW,Palo Alto Networks,Information Technology,0001327567,PANW,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+PAYX,Paychex,Industrials,0000723531,PAYX,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+PCAR,Paccar,Industrials,0000075362,PCAR,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+PCG,PG&E Corporation,Utilities,0001004980,PCG,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+PEG,Public Service Enterprise Group,Utilities,0000788784,PEG,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+PEP,PepsiCo,Consumer Staples,0000077476,PEP,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+PFE,Pfizer,Health Care,0000078003,PFE,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+PFG,Principal Financial Group,Financials,0001126328,PFG,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+PG,Procter & Gamble,Consumer Staples,0000080424,PG,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+PGR,Progressive Corporation,Financials,0000080661,PGR,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+PH,Parker Hannifin,Industrials,0000076334,PH,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+PHM,PulteGroup,Consumer Discretionary,0000822416,PHM,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+PKG,Packaging Corporation of America,Materials,0000075677,PKG,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+PLD,Prologis,Real Estate,0001045609,PLD,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+PLTR,Palantir Technologies,Information Technology,0001321655,PLTR,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+PM,Philip Morris International,Consumer Staples,0001413329,PM,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+PNC,PNC Financial Services,Financials,0000713676,PNC,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+PNR,Pentair,Industrials,0000077360,PNR,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+PNW,Pinnacle West Capital,Utilities,0000764622,PNW,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+PODD,Insulet Corporation,Health Care,0001145197,PODD,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+PPG,PPG Industries,Materials,0000079879,PPG,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+PPL,PPL Corporation,Utilities,0000922224,PPL,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+PRU,Prudential Financial,Financials,0001137774,PRU,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+PSA,Public Storage,Real Estate,0001393311,PSA,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+PSX,Phillips 66,Energy,0001534701,PSX,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+PTC,PTC Inc.,Information Technology,0000857005,PTC,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+PWR,Quanta Services,Industrials,0001050915,PWR,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+PYPL,PayPal,Financials,0001633917,PYPL,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+Q,Qnity Electronics,Information Technology,0002058873,Q,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+QCOM,Qualcomm,Information Technology,0000804328,QCOM,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+RCL,Royal Caribbean Group,Consumer Discretionary,0000884887,RCL,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+RDDT,Reddit,Communication Services,0001713445,RDDT,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+REG,Regency Centers,Real Estate,0000910606,REG,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+REGN,Regeneron Pharmaceuticals,Health Care,0000872589,REGN,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+RF,Regions Financial Corporation,Financials,0001281761,RF,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+RJF,Raymond James Financial,Financials,0000720005,RJF,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+RL,Ralph Lauren Corporation,Consumer Discretionary,0001037038,RL,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+RMD,ResMed,Health Care,0000943819,RMD,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ROK,Rockwell Automation,Industrials,0001024478,ROK,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ROL,"Rollins, Inc.",Industrials,0000084839,ROL,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ROP,Roper Technologies,Information Technology,0000882835,ROP,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ROST,Ross Stores,Consumer Discretionary,0000745732,ROST,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+RSG,Republic Services,Industrials,0001060391,RSG,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+RTX,RTX Corporation,Industrials,0000101829,RTX,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+RVTY,Revvity,Health Care,0000031791,RVTY,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+SBAC,SBA Communications,Real Estate,0001034054,SBAC,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+SBUX,Starbucks,Consumer Discretionary,0000829224,SBUX,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+SCHW,Charles Schwab Corporation,Financials,0000316709,SCHW,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+SHW,Sherwin-Williams,Materials,0000089800,SHW,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+SJM,J.M. Smucker Company (The),Consumer Staples,0000091419,SJM,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+SKYD,Skydance,Communication Services,0002041610,SKYD,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+SLB,Schlumberger,Energy,0000087347,SLB,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+SMCI,Supermicro,Information Technology,0001375365,SMCI,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+SNA,Snap-on,Industrials,0000091440,SNA,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+SNDK,Sandisk,Information Technology,0002023554,SNDK,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+SNPS,Synopsys,Information Technology,0000883241,SNPS,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+SO,Southern Company,Utilities,0000092122,SO,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+SOLV,Solventum,Health Care,0001964738,SOLV,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+SPG,Simon Property Group,Real Estate,0001063761,SPG,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+SPGI,S&P Global,Financials,0000064040,SPGI,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+SRE,Sempra,Utilities,0001032208,SRE,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+STE,Steris,Health Care,0001757898,STE,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+STLD,Steel Dynamics,Materials,0001022671,STLD,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+STT,State Street Corporation,Financials,0000093751,STT,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+STX,Seagate Technology,Information Technology,0001137789,STX,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+STZ,Constellation Brands,Consumer Staples,0000016918,STZ,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+SW,Smurfit Westrock,Materials,0002005951,SW,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+SWK,Stanley Black & Decker,Industrials,0000093556,SWK,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+SWKS,Skyworks Solutions,Information Technology,0000004127,SWKS,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+SYF,Synchrony Financial,Financials,0001601712,SYF,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+SYK,Stryker Corporation,Health Care,0000310764,SYK,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+SYY,Sysco,Consumer Staples,0000096021,SYY,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+T,AT&T,Communication Services,0000732717,T,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+TDG,TransDigm Group,Industrials,0001260221,TDG,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+TDY,Teledyne Technologies,Information Technology,0001094285,TDY,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+TECH,Bio-Techne,Health Care,0000842023,TECH,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+TEL,TE Connectivity,Information Technology,0001385157,TEL,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+TER,Teradyne,Information Technology,0000097210,TER,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+TFC,Truist Financial,Financials,0000092230,TFC,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+TGT,Target Corporation,Consumer Staples,0000027419,TGT,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+TJX,TJX Companies,Consumer Discretionary,0000109198,TJX,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+TKO,TKO Group Holdings,Communication Services,0001973266,TKO,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+TMO,Thermo Fisher Scientific,Health Care,0000097745,TMO,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+TMUS,T-Mobile US,Communication Services,0001283699,TMUS,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+TPL,Texas Pacific Land Corporation,Energy,0001811074,TPL,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+TPR,"Tapestry, Inc.",Consumer Discretionary,0001116132,TPR,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+TRGP,Targa Resources,Energy,0001389170,TRGP,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+TRMB,Trimble Inc.,Information Technology,0000864749,TRMB,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+TROW,T. Rowe Price,Financials,0001113169,TROW,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+TRV,Travelers Companies (The),Financials,0000086312,TRV,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+TSCO,Tractor Supply,Consumer Discretionary,0000916365,TSCO,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+TSLA,"Tesla, Inc.",Consumer Discretionary,0001318605,TSLA,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+TSN,Tyson Foods,Consumer Staples,0000100493,TSN,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+TT,Trane Technologies,Industrials,0001466258,TT,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+TTWO,Take-Two Interactive,Communication Services,0000946581,TTWO,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+TWLO,Twilio,Information Technology,0001447669,TWLO,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+TXN,Texas Instruments,Information Technology,0000097476,TXN,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+TXT,Textron,Industrials,0000217346,TXT,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+TYL,Tyler Technologies,Information Technology,0000860731,TYL,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+UAL,United Airlines Holdings,Industrials,0000100517,UAL,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+UBER,Uber,Industrials,0001543151,UBER,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+UDR,"UDR, Inc.",Real Estate,0000074208,UDR,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+UHS,Universal Health Services,Health Care,0000352915,UHS,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ULTA,Ulta Beauty,Consumer Discretionary,0001403568,ULTA,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+UNH,UnitedHealth Group,Health Care,0000731766,UNH,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+UNP,Union Pacific Corporation,Industrials,0000100885,UNP,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+UPS,United Parcel Service,Industrials,0001090727,UPS,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+URI,United Rentals,Industrials,0001067701,URI,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+USB,U.S. Bancorp,Financials,0000036104,USB,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+V,Visa Inc.,Financials,0001403161,V,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+VEEV,Veeva Systems,Health Care,0001393052,VEEV,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+VICI,Vici Properties,Real Estate,0001705696,VICI,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+VLO,Valero Energy,Energy,0001035002,VLO,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+VLTO,Veralto,Industrials,0001967680,VLTO,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+VMC,Vulcan Materials Company,Materials,0001396009,VMC,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+VMRK,Vivmark Residential,Real Estate,0000906107,VMRK,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+VRSK,Verisk Analytics,Industrials,0001442145,VRSK,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+VRSN,Verisign,Information Technology,0001014473,VRSN,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+VRT,Vertiv,Industrials,0001674101,VRT,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+VRTX,Vertex Pharmaceuticals,Health Care,0000875320,VRTX,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+VST,Vistra Corp.,Utilities,0001692819,VST,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+VTR,Ventas,Real Estate,0000740260,VTR,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+VTRS,Viatris,Health Care,0001792044,VTRS,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+VYLR,Vylor,Consumer Staples,0002128626,VYLR,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+VZ,Verizon,Communication Services,0000732712,VZ,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+WAB,Wabtec,Industrials,0000943452,WAB,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+WAT,Waters Corporation,Health Care,0001000697,WAT,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+WDAY,"Workday, Inc.",Information Technology,0001327811,WDAY,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+WDC,Western Digital,Information Technology,0000106040,WDC,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+WEC,WEC Energy Group,Utilities,0000783325,WEC,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+WELL,Welltower,Real Estate,0000766704,WELL,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+WFC,Wells Fargo,Financials,0000072971,WFC,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+WM,Waste Management,Industrials,0000823768,WM,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+WMB,Williams Companies,Energy,0000107263,WMB,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+WMT,Walmart,Consumer Staples,0000104169,WMT,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+WRB,W. R. Berkley Corporation,Financials,0000011544,WRB,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+WSM,"Williams-Sonoma, Inc.",Consumer Discretionary,0000719955,WSM,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+WST,West Pharmaceutical Services,Health Care,0000105770,WST,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+WTW,Willis Towers Watson,Financials,0001140536,WTW,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+WY,Weyerhaeuser,Real Estate,0000106535,WY,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+WYNN,Wynn Resorts,Consumer Discretionary,0001174922,WYNN,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+XEL,Xcel Energy,Utilities,0000072903,XEL,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+XOM,ExxonMobil,Energy,0002115436,XOM,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+XYL,Xylem Inc.,Industrials,0001524472,XYL,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+XYZ,"Block, Inc.",Financials,0001512673,XYZ,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+YUM,Yum! Brands,Consumer Discretionary,0001041061,YUM,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ZBH,Zimmer Biomet,Health Care,0001136869,ZBH,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ZBRA,Zebra Technologies,Information Technology,0000877212,ZBRA,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only
+ZTS,Zoetis,Health Care,0001555280,ZTS,https://en.wikipedia.org/wiki/List_of_S%26P_500_companies,2026-11-21T18:06:37.016949+00:00,current_survivors_only,illustrative survivors-only

@@ -1,0 +1,333 @@
+{
+  "run_id": "20261121T181651Z-e835843f",
+  "status": "completed",
+  "started_at_utc": "2026-11-21T18:16:51.314508+00:00",
+  "configuration": {
+    "universe_mode": "current_survivors_only",
+    "allowed_universe_modes": [
+      "historical_top_cap_2010",
+      "historical_roster_2010",
+      "current_survivors_only"
+    ],
+    "download_start": "2004-12-20",
+    "download_end_inclusive": "2025-12-31",
+    "yahoo_end_exclusive": "2026-01-01",
+    "initial_training_start": "2005-01-01",
+    "initial_training_end": "2010-12-31",
+    "initial_signal_date": "2010-12-31",
+    "initial_execution_date": "2011-01-03",
+    "backtest_end": "2025-12-31",
+    "rolling_window_years": 5,
+    "rolling_window_left_boundary": "exclusive",
+    "rolling_window_right_boundary": "inclusive",
+    "initial_training_calendar_years": 6,
+    "initial_capital_usd": 10000,
+    "fee_rate": 0.001,
+    "initial_purchase_fee": true,
+    "initial_fee_policy": "charge_all_portfolios",
+    "fractional_shares": true,
+    "allow_shorting": false,
+    "maximum_stock_weight": null,
+    "fully_invested": true,
+    "signal_convention": "period_last_session_close",
+    "execution_convention": "next_session_close",
+    "material_rebalance_turnover_threshold": 0.0001,
+    "material_rebalance_comparison": "strictly_greater",
+    "weight_filter_threshold": 0.0001,
+    "weight_filter_comparison": "strictly_less",
+    "post_fee_solver": "bisection",
+    "post_fee_absolute_tolerance_usd": 1e-08,
+    "post_fee_max_iterations": 200,
+    "negative_cash_policy": "error",
+    "turnover_convention": "gross_two_sided",
+    "report_initial_turnover_separately": true,
+    "strategies": {
+      "buy_and_hold": {
+        "rebalance_months": []
+      },
+      "monthly": {
+        "rebalance_months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "quarterly": {
+        "rebalance_months": [
+          3,
+          6,
+          9,
+          12
+        ]
+      },
+      "semiannual": {
+        "rebalance_months": [
+          6,
+          12
+        ]
+      },
+      "annual": {
+        "rebalance_months": [
+          12
+        ]
+      }
+    },
+    "calendar": {
+      "exchange": "XNYS",
+      "start": "2004-12-01",
+      "end": "2026-12-31",
+      "required_exceptional_closures": [
+        "2012-10-29",
+        "2012-10-30",
+        "2018-12-05",
+        "2025-01-09"
+      ]
+    },
+    "universe": {
+      "current_roster_url": "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies",
+      "historical_as_of": "2010-12-31",
+      "historical_sector_count": 10,
+      "current_sector_count": 11,
+      "maximum_per_sector": 10,
+      "maximum_total": 100,
+      "current_selection_order": "alphabetical_sector_round_robin",
+      "historical_top_cap_order": "descending_2010_market_cap_then_permanent_id",
+      "historical_roster_order": "alphabetical_historical_identifier",
+      "duplicate_issuer_policy": "exclude_and_log",
+      "historical_verified_source": null,
+      "unavailable_historical_source_policy": "error",
+      "automatic_tier_fallback": false,
+      "coverage_start": "2005-01-01",
+      "coverage_end": "2025-12-31",
+      "missing_trading_session_prices_tolerated": 0,
+      "incomplete_candidate_policy": "exclude_and_log_before_selection",
+      "selected_asset_missing_price_policy": "error",
+      "price_forward_fill": false,
+      "price_backfill": false,
+      "result_label": "illustrative survivors-only"
+    },
+    "prices": {
+      "source": "yahoo_yfinance",
+      "auto_adjust": false,
+      "field": "Adj Close",
+      "interpretation": "retrieval_vintage_backward_adjusted_total_return_proxy",
+      "separate_dividend_credit": false,
+      "preserve_original_ticker": true,
+      "yahoo_dot_to_hyphen_mapping": true,
+      "save_raw_data_and_checksums": true,
+      "checksum_algorithm": "sha256"
+    },
+    "download": {
+      "user_agent": "Markowicz_rebalancing/0.1 (academic portfolio research; https://github.com/lsobca/Markowicz_rebalancing)",
+      "timeout_seconds": 30,
+      "ticker_batch_size": 5,
+      "max_attempts": 5,
+      "exponential_backoff_initial_seconds": 2,
+      "exponential_backoff_multiplier": 2,
+      "exponential_backoff_max_seconds": 120,
+      "pause_between_batches_seconds": 3,
+      "respect_retry_after": true,
+      "cache_enabled": true,
+      "cache_directory": "data/raw"
+    },
+    "rf_mode": "fred_dgs3mo",
+    "risk_free": {
+      "allowed_modes": [
+        "fred_dgs3mo",
+        "zero-sensitivity"
+      ],
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS3MO",
+      "series": "DGS3MO",
+      "percent_to_decimal_divisor": 100,
+      "publication_lag_us_business_days": 1,
+      "business_day_calendar": "USFederalHolidayCalendar",
+      "fill_policy": "past_only_forward_fill",
+      "future_backfill": false,
+      "daily_rate_transformation": "(1 + annual_rate) ** (1 / 252) - 1",
+      "unavailable_source_and_cache_policy": "error",
+      "zero_sensitivity_annual_rate": 0.0
+    },
+    "optimization": {
+      "formulation": "positive_excess_max_sharpe_convex",
+      "solver": "CLARABEL",
+      "solver_fallback": false,
+      "covariance_symmetrize": true,
+      "covariance_eigenvalue_floor_annual": 1e-10,
+      "log_covariance_regularization": true,
+      "feasibility_absolute_tolerance": 1e-08,
+      "solver_max_iterations": 1000,
+      "nonpositive_excess_policy": "largest_excess_return_single_stock",
+      "tie_break": "lexicographically_smallest_stable_id",
+      "invalid_fallback_volatility_policy": "error",
+      "other_failure_policy": "error",
+      "normalize_after_weight_filter": true
+    },
+    "metrics": {
+      "annualization_sessions": 252,
+      "return_type": "daily_simple",
+      "mean_estimator": "arithmetic",
+      "covariance_ddof": 1,
+      "volatility_ddof": 1,
+      "cagr_day_count": "actual_days_over_365.25",
+      "cagr_days_per_year": 365.25,
+      "cagr_time_origin": "2011-01-03",
+      "initial_drawdown_peak_usd": 10000,
+      "include_initial_fee_in_net_return": true,
+      "include_synthetic_initial_fee_return_in_volatility": false,
+      "concentration": [
+        "holdings_count",
+        "largest_weight",
+        "hhi"
+      ],
+      "rebalance_counts": [
+        "scheduled",
+        "any_trade",
+        "material"
+      ],
+      "subperiods": [
+        {
+          "start": "2011-01-03",
+          "end": "2015-12-31",
+          "baseline": "external_capital_before_initial_purchase"
+        },
+        {
+          "start": "2016-01-01",
+          "end": "2020-12-31",
+          "baseline": "2015-12-31"
+        },
+        {
+          "start": "2021-01-01",
+          "end": "2025-12-31",
+          "baseline": "2020-12-31"
+        }
+      ]
+    },
+    "plots": {
+      "influential_stocks_count": 10,
+      "remaining_holdings_label": "Other",
+      "dpi": 160,
+      "format": "png"
+    },
+    "benchmarks_enabled": false,
+    "paths": {
+      "raw_data": "data/raw",
+      "processed_data": "data/processed",
+      "results": "results",
+      "graphs": "results/graphs"
+    }
+  },
+  "config_source_sha256": "5df1cdd030a6f8d1826eb681aa3d7a803541ae0938aee81da89758c76a57f01d",
+  "sensitivity": false,
+  "output": "/Users/luciasobcakova/Documents/Codex/2026-11-21/au/Markowicz_rebalancing/results",
+  "artifacts": [
+    {
+      "path": "conclusions.md",
+      "sha256": "1f6503dca1da14064ab19c3d1c362bbaaa2bbba76a76f95e9a28891c0b220baa"
+    },
+    {
+      "path": "data_quality_report.csv",
+      "sha256": "d183bf1a2f9ac338b4d6e56e8fa0a80d0091aea8cd76e2110f03b2acd6511e78"
+    },
+    {
+      "path": "drawdown_curves.csv",
+      "sha256": "56eff56a35f0425d1b3837e8aa193d7ed71dac73d75cad4a1af5a8e0ed2c0f40"
+    },
+    {
+      "path": "events.csv",
+      "sha256": "88e51bbe81f926e69911d912858ca5218470bfb6f291b551aa1caca534cbfd77"
+    },
+    {
+      "path": "graphs/drawdowns.png",
+      "sha256": "cfce79f06fe27b91299bd8f79e12cb9b71bbd438ac532537532c3e883afe0864"
+    },
+    {
+      "path": "graphs/portfolio_growth.png",
+      "sha256": "d8e4c413055ea1e9f725724385e1f59ab2d36d4911a3da053d0ee4f33f0b2337"
+    },
+    {
+      "path": "graphs/risk_return.png",
+      "sha256": "ee521e12e7c8c7def2db17766bd22cb561577805c9d3d14311a55f0625e27e12"
+    },
+    {
+      "path": "graphs/weight_evolution.png",
+      "sha256": "b1fabc5e6f66c40193c7a0e8a542a242cb9003448e633669c49a4c638468b9ec"
+    },
+    {
+      "path": "initial_weights.csv",
+      "sha256": "e16c9c07d3a4ce1e30fb57bef3d826092b4333aacc4684eea4b20dfc5eedbfc9"
+    },
+    {
+      "path": "optimization_log.csv",
+      "sha256": "bcbfe17a83c4bd19b114110f991eaf9040eaa08128905eb94d3bf1111f419963"
+    },
+    {
+      "path": "portfolio_metrics.csv",
+      "sha256": "ee44d709fdedb9574fd856a5fd579acb8e2930454490b63a274e5ac0c05d7210"
+    },
+    {
+      "path": "portfolio_values.csv",
+      "sha256": "bad8f3512e3f03795858e951fee0d691a0ed7bfb93a42249c9c69ac425b0e8e4"
+    },
+    {
+      "path": "risk_free_alignment.csv",
+      "sha256": "3318deddbbc9086a361d80e6895e6b1b1bb30c90971e3fb04826b217a2742405"
+    },
+    {
+      "path": "schedule.csv",
+      "sha256": "7ea7be6932ebf8889f4eac87f6c165a8fc62dfb23342fe4b9e62f6f6a0f75004"
+    },
+    {
+      "path": "subperiod_metrics.csv",
+      "sha256": "e04e4916f85825d6b1fa3fa0feace50de943b56195de8ffd911b1f75222e2e72"
+    },
+    {
+      "path": "trades.csv",
+      "sha256": "7f439b3ce78504e3ab7751ddc6708ae0fa85beebe0f454100e379f4c0d1a51c8"
+    },
+    {
+      "path": "weight_history.csv",
+      "sha256": "941ee7e0fa7c3ba0e7c2c9258b9f7329520a8b7be1a2766cf8c16fca1ce6b24a"
+    },
+    {
+      "path": "weight_history.csv.gz",
+      "sha256": "adf1fb1235184ac4f905fed83644171e07843a56093246b4dbcd1634960e0e92"
+    }
+  ],
+  "download_manifest": "/Users/luciasobcakova/Documents/Codex/2026-11-21/au/Markowicz_rebalancing/data/manifests/20261121T181651Z-0d395a84.json",
+  "metadata": {
+    "universe_mode": "current_survivors_only",
+    "bias_label": "illustrative survivors-only",
+    "download_manifest": "/Users/luciasobcakova/Documents/Codex/2026-11-21/au/Markowicz_rebalancing/data/manifests/20261121T181651Z-0d395a84.json",
+    "rf_mode": "fred_dgs3mo",
+    "annualization_sessions": 252,
+    "covariance_ddof": 1,
+    "volatility_ddof": 1,
+    "price_interpretation": "retrieval_vintage_backward_adjusted_total_return_proxy",
+    "reference_date": "2004-12-31",
+    "first_return_date": "2005-01-03",
+    "last_return_date": "2025-12-31",
+    "rf_publication_convention": "observation_plus_one_US_federal_business_day",
+    "rf_vintage_limitation": "download_vintage_not_historical_release_archive",
+    "price_fill_count": 0,
+    "initial_external_capital_usd": 10000.0,
+    "initial_execution_date": "2011-01-03",
+    "fee_rate": 0.001,
+    "fee_scenario": "configured trading fee",
+    "turnover_convention": "gross_two_sided",
+    "scheduled_count_definition": "post-initial executions within sample; final unexecuted signals excluded",
+    "share_convention": "fractional adjusted-total-return proxy units",
+    "cash_interest_rate": 0.0,
+    "experiment": "joint target re-estimation and trading frequency"
+  },
+  "finished_at_utc": "2026-11-21T18:28:10.883734+00:00",
+  "storage_note": "weight_history.csv is retained locally; identical weight_history.csv.gz is tracked in Git. Decompress to reproduce the CSV checksum."
+}

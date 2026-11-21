@@ -1,7 +1,8 @@
 # Proveniencia — etapa 2
 
-Tento adresár obsahuje iba šablónu, nie záznamy uskutočneného sťahovania.
-Downloader ani kontroly neboli spustené. Historický zdroj nebol overený.
+Tento adresár obsahuje dokumentáciu a šablónu. Skutočné záznamy dokončeného
+sťahovania sú v data/manifests/ a data/universe/. Historický point-in-time
+zdroj nebol overený; vykonaný bol výslovne survivors-only režim.
 
 Budúce explicitné volanie `download_inputs(config, root, refresh=False)`:
 
@@ -17,7 +18,7 @@ Budúce explicitné volanie `download_inputs(config, root, refresh=False)`:
   obsahovo adresované objekty ani nespojí ceny z rôznych verzií do jednej série.
 
 Cache sa používa len po zhode požiadavky, SHA-256 a schémy; neúplné Yahoo
-histórie sa opakujú samostatne aj po dávkovom pokuse. `refresh=True` žiada
+histórie sa individuálne kontrolujú a opakujú v malých dávkach. `refresh=True` žiada
 nové dáta; po zlyhaní môže použiť overenú úplnú cache, čo sa vykáže.
 Manifest sám nenahrádza archivované surové dáta. Pre presnú reprodukciu
 konkrétnej dátovej verzie treba odovzdať aj zodpovedajúce raw objekty mimo

@@ -1,4 +1,4 @@
-# Phase 1 configuration only; no workflow has been executed or validated.
+# Research defaults; execution status is recorded in results/run_manifest.json.
 universe_mode: current_survivors_only
 allowed_universe_modes: [historical_top_cap_2010, historical_roster_2010, current_survivors_only]
 download_start: '2004-12-20'

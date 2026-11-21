@@ -1,7 +1,8 @@
-# Offline test source — not executed
+# Offline test suite
 
-Etapa 8 obsahuje iba zdrojové testy. Žiadny test, import modulov, kontrola
-syntaxe ani inštalácia závislostí neboli v rámci implementácie vykonané.
+Testy boli pôvodne napísané bez spustenia v etape 8. Po samostatnom súhlase
+používateľa prebehla validácia: 29 testov prešlo, vrátane exportu grafov
+a opakovaného dávkového sťahovania. Log je v `validation/pytest.txt`.
 
 Po samostatnom povolení validácie, z koreňa repozitára s nainštalovanými
 závislosťami, je určený príkaz `python -m pytest tests`.
@@ -22,4 +23,4 @@ celkové metriky a presné otvorenia podperiód.
 
 Syntetické testy nepreukazujú správnosť skutočných korporátnych udalostí,
 licencie, historických zdrojov ani aktuálnu kompatibilitu vzdialených API.
-Samotná existencia testov neznamená, že prešli; budúci beh môže odhaliť chyby.
+Úspešný offline beh nenahrádza overenie reálnych zdrojov; ďalšie behy môžu odhaliť nové chyby.

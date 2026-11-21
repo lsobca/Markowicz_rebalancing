@@ -4,75 +4,67 @@ Python výskumný projekt: ako frekvencia opakovaného odhadu Markowitzových v�
 spolu s rebalansovaním ovplyvňuje výnos, riziko a náklady v rokoch 2011–2025.
 Autoritatívna metodika a etapový postup sú v [AGENTS.md](AGENTS.md).
 
-**Stav: etapa 8 — všetky dohodnuté zdrojové etapy vrátane offline testov sú napísané.
-Žiadny analytický kód, downloader, test,
-notebook, inštalácia závislostí, sťahovanie finančných dát ani backtest neboli
-spustené. Konfigurácia a závislosti nie sú validačne overené. Výsledky neexistujú.**
-Podrobnosti cache a manifestov sú v [proveniencii](data/provenance/README.md).
-Moduly `src/universe.py`, `src/download_data.py`, `src/preprocessing.py`
-a `src/optimization.py`, spolu s `src/backtest.py`, `src/metrics.py`
-a `src/plotting.py`, zatiaľ neboli spustené
-ani syntaxou či testami overené. Ani `run_analysis.py` a `analysis.ipynb`
-neboli spustené. Workflow je implementovaný, jeho funkčnosť zatiaľ nebola overená.
-Žiadny dashboard, web ani GUI nie sú súčasťou zadania.
+**Stav: implementácia aj hlavný beh sú dokončené.** Po samostatnom súhlase
+používateľa boli nainštalované závislosti, úspešne vykonaných 29 offline testov,
+stiahnuté zdroje a vykonaný celý backtest s 0,1 % poplatkom a FRED sadzbou.
+Záznam behu je v [results/run_manifest.json](results/run_manifest.json),
+metriky v [results/portfolio_metrics.csv](results/portfolio_metrics.csv)
+a interpretácia v [results/conclusions.md](results/conclusions.md).
+Výsledky sú **illustrative survivors-only**, nie neskreslený historický experiment.
 
-## Budúce spustenie — až po samostatnom povolení
+Zo 503 dnešných titulov malo 383 úplnú cenovú históriu; 120 bolo vyradených
+pre neúplné/neplatné ceny a jedna oprávnená duplicitná trieda emitenta bola
+odstránená. Deterministicky sa vybralo 100 akcií v 11 sektoroch.
 
-Z koreňa repozitára `Markowicz_rebalancing`, v prostredí Python 3.10 alebo
-novšom (konkrétna kompatibilita neoverená), najprv pripravte závislosti:
+| Stratégia | Konečná hodnota USD | CAGR | Sharpe | Max. drawdown |
+| --- | ---: | ---: | ---: | ---: |
+| Buy & Hold | 199 518,47 | 22,10 % | 0,909 | 42,95 % |
+| Mesačná | 144 400,22 | 19,49 % | 0,958 | 29,19 % |
+| Štvrťročná | 159 058,32 | 20,27 % | 0,991 | 29,78 % |
+| Polročná | 158 605,42 | 20,24 % | 0,983 | 29,44 % |
+| Ročná | 134 300,64 | 18,92 % | 0,919 | 29,97 % |
+
+## Spustenie a reprodukovateľnosť
+
+Overené prostredie: Python 3.11, macOS ARM64. Presné verzie sú v
+`requirements-validated.txt`; prenositeľné ohraničené rozsahy zostávajú
+v `requirements.txt`. Z koreňa repozitára:
 
 ```sh
-python -m venv .venv
+python3.11 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
+python -m pytest tests
+python run_analysis.py --output results_new
 ```
 
-Potom jediný príkaz vykoná sťahovanie, preprocessing, päť backtestov,
-metriky, štyri grafy a generovanie záverov:
+Samotný `python run_analysis.py` vykoná sťahovanie, preprocessing, päť
+backtestov, metriky, grafy aj závery jedným príkazom. Predvolený `results/`
+už obsahuje dokončený beh, preto na opakovanie použite nový `--output`.
+Existujúce súbory sa neprepisujú; cache sa využíva po kontrole SHA-256.
+`--refresh` vyžiada novú dátovú verziu. Surové ceny zostávajú lokálne
+v ignorovanom `data/raw/`; ich kontrolné súčty sú v commitovaných manifestoch.
+Nové stiahnutie nemusí reprodukovať tú istú vendor-vintage verziu.
 
-```sh
-python run_analysis.py
-```
-
-Žiadny z týchto príkazov zatiaľ nebol vykonaný. Netreba ručne pripravovať CSV.
-Predvolené výsledky idú do `results/`. Skript odmietne existujúce výstupné
-súbory; ďalšiemu behu zvoľte nový adresár cez `--output`. Zachované `.gitkeep`
-neprekážajú. Chyba skončí nenulovým exit kódom a stavom `failed` v manifeste;
-prípadné čiastočné výstupy sa nesmú považovať za dokončený výsledok.
-
-Citlivostné scenáre majú povinne oddelený adresár, napríklad:
+Citlivosti sú implementované, ale neboli spustené:
 
 ```sh
 python run_analysis.py --fee-rate 0 --output results_zero_fee
 python run_analysis.py --rf-mode zero-sensitivity --output results_zero_rf
 ```
 
-Tieto scenáre nenahrádzajú primárny beh. `--refresh` vyžiada novú dátovú
-verziu; inak sa používa overená cache. Výstupný a cache priečinok sa riešia
-voči priečinku zvoleného `--config` súboru. Historické režimy bez overeného
-adaptéra stále explicitne zlyhajú, nikdy sa samy neprepnú na aktuálnu vzorku.
+Notebook `analysis.ipynb` predvolene iba kontroluje a zobrazuje uložené výsledky.
+Prepínač sťahovania zostáva vypnutý. Otvárajte ho z koreňa repozitára.
+História váh je na GitHube v `results/weight_history.csv.gz` (približne 7 MiB),
+bezstratovo komprimovaná z približne 149 MiB CSV. Lokálny CSV zostáva zachovaný,
+ale necommitovaný. Notebook overí aj rozbalený SHA-256 bez požiadavky rozbaliť súbor;
+pandas ho vie načítať priamo cez `pd.read_csv("results/weight_history.csv.gz")`.
 
-`analysis.ipynb` otvárajte z koreňa repozitára. Predvolene iba číta dokončené
-výsledky a kontroluje ich SHA-256 podľa `run_manifest.json`. Bez výsledkov
-skončí vysvetlením, nie sťahovaním. Voliteľná bunka s workflow má
-`RUN_DOWNLOAD_AND_BACKTEST = False`; zmeniť ju treba až po osobitnom povolení.
-
-Okrem ôsmich povinných CSV vzniknú `events.csv`, `schedule.csv`,
-`drawdown_curves.csv` a `risk_free_alignment.csv`. `run_manifest.json`
-obsahuje účinnú konfiguráciu, odkaz na dátový manifest, stav a SHA-256
-výstupov. `conclusions.md` vznikne až po backteste a metrikách, s kvantifikáciou
-výsledkov, podperiód, nákladov a koncentrácie aj povinnými obmedzeniami.
-Notebook ani skript neinštalujú závislosti a nespúšťajú testy automaticky.
-
-## Testy — zatiaľ iba zdrojové súbory
-
-`tests/` obsahuje syntetické offline testy konfigurácie, účtovania, kalendára,
-preprocessingu, optimalizátora, zdrojov a metrík vrátane podperiód.
-Podrobnosti a hranice pokrytia sú v [tests/README.md](tests/README.md).
-Po osobitnom povolení validácie je určený príkaz `python -m pytest tests`.
-**Testy neboli spustené a ich úspešnosť sa netvrdí.** Implementačné etapy
-sú týmto ukončené; sťahovanie, výpočty, testovanie a opravy na základe
-ich výsledkov tvoria samostatne povoľovanú nasledujúcu fázu.
+Okrem povinných tabuliek sú uložené udalosti, kalendár exekúcií, drawdown krivky
+a zarovnanie FRED. Manifest zaznamenáva účinnú konfiguráciu, stav a SHA-256.
+Prerušené a neúspešné prípravné behy sú explicitne označené v `data/manifests/`.
+Podrobnosti sú v [validation/README.md](validation/README.md) a
+[data/provenance/README.md](data/provenance/README.md).
 
 ## Päť nezávislých portfólií
 
@@ -172,7 +164,7 @@ známych dát. Obchod sa vykoná pri close nasledujúcej seansy a ovplyvní až
 Po neskoršom povolení testov treba overiť aj Sandy 2012-10-29/30, Bush
 2018-12-05 a Carter 2025-01-09. Predpokladané prvé páry signál → obchod:
 mesačne 2011-01-31 → 02-01, štvrťročne 03-31 → 04-01, polročne
-06-30 → 07-01, ročne 2011-12-30 → 2012-01-03. Kalendár zatiaľ nebol overený.
+06-30 → 07-01, ročne 2011-12-30 → 2012-01-03. Tieto páry aj výnimočné uzávery prešli offline testami.
 Po úvodnom nákupe sa okamžite nereoptimalizuje. Obchody po poslednej seanse
 2025 sa nevykonajú; posledný decembrový ročný signál už nemá obchod vo vzorke.
 
@@ -217,7 +209,7 @@ s tabuľkou `.report`; nevyraďuje sa potichu. Report obsahuje pokrytie
 2005–2010 a 2011–2025, chýbajúce/neplatné ceny a referenčnú seansu.
 Pomocné funkcie poskytujú ročný aritmetický priemer, výberovú kovarianciu,
 volatilitu a denné excess výnosy. Výber tréningových okien patrí do etapy 4.
-Žiadny report ani výstupný súbor zatiaľ nevznikol.
+Report je uložený v `results/data_quality_report.csv`.
 
 Zarovnanie FRED uchováva dátum pozorovania, predpokladanej dostupnosti
 a vek sadzby. Dátum dostupnosti je dátum pozorovania plus jeden pracovný
@@ -267,7 +259,7 @@ neobmedzené váhy môžu viesť k extrémnej koncentrácii, najmä mesačne.
 Etapa 6 pridáva `calculate_metrics(result, risk_free, config)` a samostatné
 funkcie `plot_growth`, `plot_risk_return`, `plot_drawdowns`, `plot_weight_evolution`.
 Export je výlučne explicitný cez `export_metrics` a `export_figures`; tieto
-funkcie zatiaľ neboli spustené a neexistujú výsledné CSV ani obrázky.
+funkcie boli vykonané počas dokončeného hlavného behu.
 CSV používa UTF-8, ISO dátumy, desatinné zlomky pre výnosy a prázdne polia
 pre nedefinované metriky. Realizovaný Sharpe je priemer denných excess výnosov
 delený ich výberovou smerodajnou odchýlkou, krát sqrt(252); nulový menovateľ
@@ -300,7 +292,7 @@ Budúce CSV v `results/`: `portfolio_metrics`, `portfolio_values`,
 `data_quality_report`, `subperiod_metrics`. Štyri statické PNG v
 `results/graphs/`: `portfolio_growth`, `risk_return`, `drawdowns`,
 `weight_evolution`; zobrazia všetkých päť portfólií. Vývoj váh oddelí
-najvýznamnejšie akcie a zvyšok zoskupí ako „Other“. Zatiaľ sú adresáre prázdne.
+najvýznamnejšie akcie a zvyšok zoskupí ako „Other“. Výstupy hlavného behu sú uložené.
 `results/conclusions.md` vznikne až z reálnych výsledkov povoleného behu:
 odlíši konečnú hodnotu, rizikovo upravený výnos, drawdown, náklady/obrat,
 koncentráciu a zmeny medzi podperiódami, bez vymyslených víťazov.
@@ -318,7 +310,7 @@ nie schopnosť Markowitza prekonať široký trh. SPY total-return proxy alebo
 
 `config.yaml` obsahuje metodické predvoľby a explicitné technické tolerancie,
 limity pokusov a grafické nastavenia. `requirements.txt` používa ohraničené
-rozsahy, vrátane `exchange_calendars>=4.7,<5`; kompatibilita nebola overená.
+rozsahy, vrátane `exchange_calendars>=4.7,<5`; konkrétne nainštalované prostredie je zachytené v `requirements-validated.txt`.
 CLARABEL je pevne zvolený solver, verzia balíka má ohraničený rozsah namiesto
 neovereného presného pinu. `src/__init__.py` je prázdny. Surové cenové dáta,
 spracované dátové cache a tajné premenné prostredia sa necommitujú.
@@ -326,8 +318,7 @@ Celý `results/` vrátane CSV, záverov a grafov sa môže commitovať.
 Pre reprodukovateľnosť sa commitujú aj záznamy v `data/universe/`
 (zoznamy a vylúčenia), `data/manifests/` a `data/provenance/`
 (zdroje, dátumy stiahnutia a kontrolné súčty). Budúce moduly majú tieto
-záznamy ukladať do uvedených adresárov. Zatiaľ existuje iba dokumentácia
-a prázdna šablóna proveniencie, nie skutočné zdrojové záznamy.
+záznamy ukladať do uvedených adresárov. Adresáre už obsahujú skutočné zdrojové záznamy dokončeného behu.
 Ďalšie etapy sa ukladajú priamo na vetvu `main` podľa pokynu používateľa.
 
 [Etapový plán](PROJECT_PHASES.md): kostra → zdroje a sťahovanie → čistenie →

@@ -12,6 +12,7 @@ from hashlib import sha256
 from importlib.metadata import version
 from io import BytesIO
 import json
+import logging
 from pathlib import Path
 import time
 from typing import Callable
@@ -28,6 +29,8 @@ from .universe import (
     BIAS_LABEL, DataQualityError, SourceUnavailableError, coverage_record,
     parse_current_roster, require_supported_mode, select_survivors,
 )
+
+LOGGER = logging.getLogger(__name__)
 
 
 def utc_now() -> str:
@@ -95,6 +98,9 @@ class Downloader:
             raise ValueError("Invalid retry count or Yahoo batch size (maximum 10)")
         self.store = SnapshotStore(root / self.settings["cache_directory"],
                                    self.settings["cache_enabled"])
+        # Keep Yahoo's timezone/cookie cache inside the ignored project cache,
+        # rather than requiring write access to a user's system cache folder.
+        yf.set_tz_cache_location(str(self.store.root / "yfinance_internal"))
         self.session = requests.Session()
         self.session.headers["User-Agent"] = self.settings["user_agent"]
         self.records: list[dict] = []
@@ -189,8 +195,11 @@ class Downloader:
             if attempt:
                 self.pause(attempt - 1)
             retry = []
-            # First pass batches; subsequent attempts isolate every unresolved ticker.
-            size = batch_size if attempt == 0 else 1
+            # Retry every unresolved ticker in the same bounded small batches.
+            # Validation and retry eligibility remain individual per ticker.
+            size = batch_size
+            LOGGER.info("Yahoo attempt %s/%s: %s unresolved tickers", attempt + 1,
+                        self.attempts, len(pending))
             for offset in range(0, len(pending), size):
                 batch = pending[offset:offset + size]
                 try:
@@ -240,6 +249,8 @@ class Downloader:
                         errors[ticker].append(f"Attempt {attempt + 1}: {exc}")
                         retry.append(ticker)
                 self.sleep(self.settings["pause_between_batches_seconds"])
+                LOGGER.info("Yahoo attempt %s: processed %s/%s", attempt + 1,
+                            min(offset + size, len(pending)), len(pending))
             pending = retry
         for ticker in pending:
             if ticker in cached_good:
@@ -385,6 +396,9 @@ def download_inputs(config: dict, root: str | Path, *, refresh: bool = False) ->
         manifest["status"] = "downloads_complete_not_backtested"
         manifest["selected_count"] = len(selected)
         return DownloadBundle(selected, matrix, fred, manifest_path)
+    except KeyboardInterrupt:
+        manifest["status"] = "interrupted"
+        raise
     except Exception as exc:
         manifest["status"] = "failed"
         manifest["error"] = f"{type(exc).__name__}: {exc}"

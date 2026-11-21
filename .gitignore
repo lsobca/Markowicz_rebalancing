@@ -28,3 +28,7 @@ dist/
 !/data/processed/
 !/data/processed/.gitkeep
 # Track all results, including CSV tables, conclusions and static graphs.
+
+.venv311/
+# The identical compressed CSV is versioned; retain this large local export.
+/results/weight_history.csv

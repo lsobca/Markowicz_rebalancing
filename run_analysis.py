@@ -5,9 +5,12 @@ Nothing runs on import. This source was written without executing the workflow.
 from __future__ import annotations
 
 import argparse
+import gzip
+import shutil
 from datetime import datetime, timezone
 from hashlib import sha256
 import json
+import logging
 from pathlib import Path
 import sys
 from uuid import uuid4
@@ -20,6 +23,16 @@ import yaml
 def write_csv(frame: pd.DataFrame, path: Path) -> None:
     frame.to_csv(path, index=False, encoding="utf-8", float_format="%.12g",
                  date_format="%Y-%m-%d", na_rep="")
+
+
+def compress_weight_history(directory: Path) -> Path:
+    """Retain the local CSV and create a deterministic Git-friendly gzip copy."""
+    source = directory / "weight_history.csv"
+    destination = source.with_suffix(".csv.gz")
+    with source.open("rb") as incoming, destination.open("wb") as outgoing:
+        with gzip.GzipFile(filename="", mode="wb", fileobj=outgoing, mtime=0) as compressed:
+            shutil.copyfileobj(incoming, compressed)
+    return destination
 
 
 def generate_conclusions(metrics, result, download_manifest: dict) -> str:
@@ -87,8 +100,14 @@ def generate_conclusions(metrics, result, download_manifest: dict) -> str:
               "Nestabilné priemery a šum bez limitu maximálnej váhy môžu viesť ku koncentrácii, "
               "najmä pri mesačnom preodhadovaní. Úvodné šesťročné a ďalšie päťročné okná "
               "sú zámerne asymetrické a obmedzujú porovnateľnosť.", "", "## Zdroje a obmedzenia", ""]
-    sources = sorted({(r["source"], r["retrieved_at_utc"]) for r in download_manifest["sources"]})
-    lines += [f"- {source} — získané {date}" for source, date in sources]
+    sources: dict[str, list[str]] = {}
+    for record in download_manifest["sources"]:
+        source = record["source"]
+        provider = "Yahoo Finance / yfinance" if "finance.yahoo.com" in source else source
+        sources.setdefault(provider, []).append(record["retrieved_at_utc"])
+    for provider, dates in sorted(sources.items()):
+        lines.append(f"- {provider}: získané od {min(dates)} do {max(dates)}.")
+    lines.append("Úplné URL, jednotlivé dátové verzie a SHA-256 sú v uvedenom dátovom manifeste.")
     lines += ["", "Vzorka je silne skreslená dnešným členstvom a dostupnosťou až do 2025 "
               "(survivorship a look-ahead selection bias). Podmienka histórie od 2005 vylučuje neskoršie IPO. "
               "Časovanie signálov bez budúcich výnosov toto výberové skreslenie neodstraňuje.",
@@ -146,12 +165,16 @@ def run(config_path: str | Path, *, output: str | Path | None = None,
     state_path = destination / "run_manifest.json"
     save_json(state_path, state)
     try:
+        logging.info("Downloading and selecting universe")
         bundle = download_inputs(config, root, refresh=refresh)
         state["download_manifest"] = str(bundle.manifest_path)
         download_manifest = json.loads(bundle.manifest_path.read_text(encoding="utf-8"))
+        logging.info("Preparing %s selected stocks", len(bundle.selected_universe))
         data = prepare_data(bundle, config)
         ids = pd.Series(data.adjusted_prices.columns, index=data.adjusted_prices.columns, dtype=str)
+        logging.info("Running five-strategy backtest")
         result = run_backtest(data, ids, config)
+        logging.info("Calculating metrics and exporting figures")
         metrics = calculate_metrics(result, data.risk_free, config)
         export_metrics(metrics, destination)
         tables = {"portfolio_values": result.portfolio_values, "initial_weights": result.initial_weights,
@@ -162,11 +185,15 @@ def run(config_path: str | Path, *, output: str | Path | None = None,
                   "risk_free_alignment": data.risk_free.rename_axis("date").reset_index()}
         for name, table in tables.items():
             write_csv(table, destination / f"{name}.csv")
+        compress_weight_history(destination)
         export_figures(result, metrics, config, destination / "graphs")
         (destination / "conclusions.md").write_text(
             generate_conclusions(metrics, result, download_manifest), encoding="utf-8")
         state["status"] = "completed"
         state["metadata"] = result.metadata
+    except KeyboardInterrupt:
+        state["status"] = "interrupted"
+        raise
     except Exception as exc:
         state["status"] = "failed"
         state["error"] = f"{type(exc).__name__}: {exc}"
@@ -184,6 +211,7 @@ def run(config_path: str | Path, *, output: str | Path | None = None,
 
 
 def main() -> int:
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
     parser = argparse.ArgumentParser(description="Download and run the five-strategy research workflow")
     parser.add_argument("--config", type=Path, default=Path(__file__).with_name("config.yaml"))
     parser.add_argument("--output", type=Path)

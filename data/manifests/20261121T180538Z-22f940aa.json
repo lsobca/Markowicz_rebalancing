@@ -1,0 +1,261 @@
+{
+  "schema_version": 1,
+  "run_id": "20261121T180538Z-22f940aa",
+  "status": "failed",
+  "started_at_utc": "2026-11-21T18:05:38.231653+00:00",
+  "universe_mode": "current_survivors_only",
+  "bias_label": "illustrative survivors-only",
+  "rf_mode": "fred_dgs3mo",
+  "configuration": {
+    "universe_mode": "current_survivors_only",
+    "allowed_universe_modes": [
+      "historical_top_cap_2010",
+      "historical_roster_2010",
+      "current_survivors_only"
+    ],
+    "download_start": "2004-12-20",
+    "download_end_inclusive": "2025-12-31",
+    "yahoo_end_exclusive": "2026-01-01",
+    "initial_training_start": "2005-01-01",
+    "initial_training_end": "2010-12-31",
+    "initial_signal_date": "2010-12-31",
+    "initial_execution_date": "2011-01-03",
+    "backtest_end": "2025-12-31",
+    "rolling_window_years": 5,
+    "rolling_window_left_boundary": "exclusive",
+    "rolling_window_right_boundary": "inclusive",
+    "initial_training_calendar_years": 6,
+    "initial_capital_usd": 10000,
+    "fee_rate": 0.001,
+    "initial_purchase_fee": true,
+    "initial_fee_policy": "charge_all_portfolios",
+    "fractional_shares": true,
+    "allow_shorting": false,
+    "maximum_stock_weight": null,
+    "fully_invested": true,
+    "signal_convention": "period_last_session_close",
+    "execution_convention": "next_session_close",
+    "material_rebalance_turnover_threshold": 0.0001,
+    "material_rebalance_comparison": "strictly_greater",
+    "weight_filter_threshold": 0.0001,
+    "weight_filter_comparison": "strictly_less",
+    "post_fee_solver": "bisection",
+    "post_fee_absolute_tolerance_usd": 1e-08,
+    "post_fee_max_iterations": 200,
+    "negative_cash_policy": "error",
+    "turnover_convention": "gross_two_sided",
+    "report_initial_turnover_separately": true,
+    "strategies": {
+      "buy_and_hold": {
+        "rebalance_months": []
+      },
+      "monthly": {
+        "rebalance_months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "quarterly": {
+        "rebalance_months": [
+          3,
+          6,
+          9,
+          12
+        ]
+      },
+      "semiannual": {
+        "rebalance_months": [
+          6,
+          12
+        ]
+      },
+      "annual": {
+        "rebalance_months": [
+          12
+        ]
+      }
+    },
+    "calendar": {
+      "exchange": "XNYS",
+      "start": "2004-12-01",
+      "end": "2026-12-31",
+      "required_exceptional_closures": [
+        "2012-10-29",
+        "2012-10-30",
+        "2018-12-05",
+        "2025-01-09"
+      ]
+    },
+    "universe": {
+      "current_roster_url": "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies",
+      "historical_as_of": "2010-12-31",
+      "historical_sector_count": 10,
+      "current_sector_count": 11,
+      "maximum_per_sector": 10,
+      "maximum_total": 100,
+      "current_selection_order": "alphabetical_sector_round_robin",
+      "historical_top_cap_order": "descending_2010_market_cap_then_permanent_id",
+      "historical_roster_order": "alphabetical_historical_identifier",
+      "duplicate_issuer_policy": "exclude_and_log",
+      "historical_verified_source": null,
+      "unavailable_historical_source_policy": "error",
+      "automatic_tier_fallback": false,
+      "coverage_start": "2005-01-01",
+      "coverage_end": "2025-12-31",
+      "missing_trading_session_prices_tolerated": 0,
+      "incomplete_candidate_policy": "exclude_and_log_before_selection",
+      "selected_asset_missing_price_policy": "error",
+      "price_forward_fill": false,
+      "price_backfill": false,
+      "result_label": "illustrative survivors-only"
+    },
+    "prices": {
+      "source": "yahoo_yfinance",
+      "auto_adjust": false,
+      "field": "Adj Close",
+      "interpretation": "retrieval_vintage_backward_adjusted_total_return_proxy",
+      "separate_dividend_credit": false,
+      "preserve_original_ticker": true,
+      "yahoo_dot_to_hyphen_mapping": true,
+      "save_raw_data_and_checksums": true,
+      "checksum_algorithm": "sha256"
+    },
+    "download": {
+      "user_agent": "Markowicz_rebalancing/0.1 (academic portfolio research; https://github.com/lsobca/Markowicz_rebalancing)",
+      "timeout_seconds": 30,
+      "ticker_batch_size": 5,
+      "max_attempts": 5,
+      "exponential_backoff_initial_seconds": 2,
+      "exponential_backoff_multiplier": 2,
+      "exponential_backoff_max_seconds": 120,
+      "pause_between_batches_seconds": 3,
+      "respect_retry_after": true,
+      "cache_enabled": true,
+      "cache_directory": "data/raw"
+    },
+    "rf_mode": "fred_dgs3mo",
+    "risk_free": {
+      "allowed_modes": [
+        "fred_dgs3mo",
+        "zero-sensitivity"
+      ],
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS3MO",
+      "series": "DGS3MO",
+      "percent_to_decimal_divisor": 100,
+      "publication_lag_us_business_days": 1,
+      "business_day_calendar": "USFederalHolidayCalendar",
+      "fill_policy": "past_only_forward_fill",
+      "future_backfill": false,
+      "daily_rate_transformation": "(1 + annual_rate) ** (1 / 252) - 1",
+      "unavailable_source_and_cache_policy": "error",
+      "zero_sensitivity_annual_rate": 0.0
+    },
+    "optimization": {
+      "formulation": "positive_excess_max_sharpe_convex",
+      "solver": "CLARABEL",
+      "solver_fallback": false,
+      "covariance_symmetrize": true,
+      "covariance_eigenvalue_floor_annual": 1e-10,
+      "log_covariance_regularization": true,
+      "feasibility_absolute_tolerance": 1e-08,
+      "solver_max_iterations": 1000,
+      "nonpositive_excess_policy": "largest_excess_return_single_stock",
+      "tie_break": "lexicographically_smallest_stable_id",
+      "invalid_fallback_volatility_policy": "error",
+      "other_failure_policy": "error",
+      "normalize_after_weight_filter": true
+    },
+    "metrics": {
+      "annualization_sessions": 252,
+      "return_type": "daily_simple",
+      "mean_estimator": "arithmetic",
+      "covariance_ddof": 1,
+      "volatility_ddof": 1,
+      "cagr_day_count": "actual_days_over_365.25",
+      "cagr_days_per_year": 365.25,
+      "cagr_time_origin": "2011-01-03",
+      "initial_drawdown_peak_usd": 10000,
+      "include_initial_fee_in_net_return": true,
+      "include_synthetic_initial_fee_return_in_volatility": false,
+      "concentration": [
+        "holdings_count",
+        "largest_weight",
+        "hhi"
+      ],
+      "rebalance_counts": [
+        "scheduled",
+        "any_trade",
+        "material"
+      ],
+      "subperiods": [
+        {
+          "start": "2011-01-03",
+          "end": "2015-12-31",
+          "baseline": "external_capital_before_initial_purchase"
+        },
+        {
+          "start": "2016-01-01",
+          "end": "2020-12-31",
+          "baseline": "2015-12-31"
+        },
+        {
+          "start": "2021-01-01",
+          "end": "2025-12-31",
+          "baseline": "2020-12-31"
+        }
+      ]
+    },
+    "plots": {
+      "influential_stocks_count": 10,
+      "remaining_holdings_label": "Other",
+      "dpi": 160,
+      "format": "png"
+    },
+    "benchmarks_enabled": false,
+    "paths": {
+      "raw_data": "data/raw",
+      "processed_data": "data/processed",
+      "results": "results",
+      "graphs": "results/graphs"
+    }
+  },
+  "artifacts": [],
+  "sources": [],
+  "events": [
+    {
+      "source": "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies",
+      "download_errors": [
+        "HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /wiki/List_of_S%26P_500_companies (Caused by NameResolutionError(\"HTTPSConnection(host='en.wikipedia.org', port=443): Failed to resolve 'en.wikipedia.org' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /wiki/List_of_S%26P_500_companies (Caused by NameResolutionError(\"HTTPSConnection(host='en.wikipedia.org', port=443): Failed to resolve 'en.wikipedia.org' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /wiki/List_of_S%26P_500_companies (Caused by NameResolutionError(\"HTTPSConnection(host='en.wikipedia.org', port=443): Failed to resolve 'en.wikipedia.org' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /wiki/List_of_S%26P_500_companies (Caused by NameResolutionError(\"HTTPSConnection(host='en.wikipedia.org', port=443): Failed to resolve 'en.wikipedia.org' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /wiki/List_of_S%26P_500_companies (Caused by NameResolutionError(\"HTTPSConnection(host='en.wikipedia.org', port=443): Failed to resolve 'en.wikipedia.org' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      ]
+    }
+  ],
+  "limitations": [
+    "future-survivor selection",
+    "post-2005 IPO exclusion",
+    "retrieval-date adjusted-price vintage",
+    "unverified delisting and corporate-action treatment"
+  ],
+  "package_versions": {
+    "pandas": "2.3.3",
+    "numpy": "2.4.6",
+    "yfinance": "0.2.66",
+    "exchange_calendars": "4.13.3",
+    "requests": "2.34.2"
+  },
+  "error": "SourceUnavailableError: current_sp500_roster: download failed and no valid cache: ['HTTPSConnectionPool(host=\\'en.wikipedia.org\\', port=443): Max retries exceeded with url: /wiki/List_of_S%26P_500_companies (Caused by NameResolutionError(\"HTTPSConnection(host=\\'en.wikipedia.org\\', port=443): Failed to resolve \\'en.wikipedia.org\\' ([Errno 8] nodename nor servname provided, or not known)\"))', 'HTTPSConnectionPool(host=\\'en.wikipedia.org\\', port=443): Max retries exceeded with url: /wiki/List_of_S%26P_500_companies (Caused by NameResolutionError(\"HTTPSConnection(host=\\'en.wikipedia.org\\', port=443): Failed to resolve \\'en.wikipedia.org\\' ([Errno 8] nodename nor servname provided, or not known)\"))', 'HTTPSConnectionPool(host=\\'en.wikipedia.org\\', port=443): Max retries exceeded with url: /wiki/List_of_S%26P_500_companies (Caused by NameResolutionError(\"HTTPSConnection(host=\\'en.wikipedia.org\\', port=443): Failed to resolve \\'en.wikipedia.org\\' ([Errno 8] nodename nor servname provided, or not known)\"))', 'HTTPSConnectionPool(host=\\'en.wikipedia.org\\', port=443): Max retries exceeded with url: /wiki/List_of_S%26P_500_companies (Caused by NameResolutionError(\"HTTPSConnection(host=\\'en.wikipedia.org\\', port=443): Failed to resolve \\'en.wikipedia.org\\' ([Errno 8] nodename nor servname provided, or not known)\"))', 'HTTPSConnectionPool(host=\\'en.wikipedia.org\\', port=443): Max retries exceeded with url: /wiki/List_of_S%26P_500_companies (Caused by NameResolutionError(\"HTTPSConnection(host=\\'en.wikipedia.org\\', port=443): Failed to resolve \\'en.wikipedia.org\\' ([Errno 8] nodename nor servname provided, or not known)\"))']",
+  "finished_at_utc": "2026-11-21T18:06:08.407805+00:00"
+}
