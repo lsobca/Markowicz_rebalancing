@@ -9,7 +9,8 @@ vyžaduje výslovné potvrdenie používateľa podľa AGENTS.md.
    cache a proveniencia. Historické režimy explicitne zlyhajú bez overeného zdroja.
 3. **Napísané, nespustené:** validácia cien, synchronizácia, výnosy,
    anualizácia, report kvality a oneskorenie bezrizikovej sadzby.
-4. Markowitz optimalizácia, okná, filter a koncentrácia.
+4. **Napísané, nespustené:** Markowitz optimalizácia cez CLARABEL,
+   regularizácia, okná, lagovaná sadzba, núdzové pravidlo, filter a koncentrácia.
 5. Päť stratégií, časovanie, účtovanie, poplatky a obrat.
 6. Metriky, podperiódy a štyri statické grafy.
 7. Orchestrácia, notebook a generátor záverov; budúce spustenie jedným príkazom.

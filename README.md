@@ -4,12 +4,13 @@ Python výskumný projekt: ako frekvencia opakovaného odhadu Markowitzových v�
 spolu s rebalansovaním ovplyvňuje výnos, riziko a náklady v rokoch 2011–2025.
 Autoritatívna metodika a etapový postup sú v [AGENTS.md](AGENTS.md).
 
-**Stav: etapa 3 — kostra, konfigurácia, sťahovanie/univerzum a preprocessing.
+**Stav: etapa 4 — kostra, sťahovanie/univerzum, preprocessing a optimalizátor.
 Žiadny analytický kód, downloader, test,
 notebook, inštalácia závislostí, sťahovanie finančných dát ani backtest neboli
 spustené. Konfigurácia a závislosti nie sú validačne overené. Výsledky neexistujú.**
 Podrobnosti cache a manifestov sú v [proveniencii](data/provenance/README.md).
-Moduly `src/universe.py`, `src/download_data.py` a `src/preprocessing.py` zatiaľ neboli spustené
+Moduly `src/universe.py`, `src/download_data.py`, `src/preprocessing.py`
+a `src/optimization.py` zatiaľ neboli spustené
 ani syntaxou či testami overené. Príkaz na kompletné budúce spustenie pribudne až v etape 7; projekt zatiaľ
 nie je spustiteľný. Žiadny dashboard, web ani GUI nie sú súčasťou zadania.
 
@@ -115,6 +116,21 @@ Aj drobné obchody patria do účtovania, obratu a poplatkov. Samostatný overri
 `fee_rate: 0` bude slúžiť iba ako označená citlivostná analýza.
 
 ## Odhady, bezriziková sadzba a optimalizácia
+
+Etapa 4 pridáva `optimize_signal(data, signal_date, stable_ids, config, initial=False)`.
+Vracia váhy, odhady priemeru, pôvodnú aj regularizovanú kovarianciu a diagnostiku
+jedného signálu; nevykonáva obchody. Pre úvodný signál sa zadá `initial=True`.
+Identifikátory musia byť jedinečné a zarovnané s aktívami; v aktuálnej vzorke
+možno použiť konzistentne zachované pôvodné symboly, nie tvrdené dobové ID.
+Výstup zahŕňa hranice okna, dátumy dostupnosti sadzby, zásah do vlastných čísel,
+stav solvera, odfiltrovanú váhu a koncentráciu. `summarize_concentration`
+pripraví počty, priemery, minimá a maximá diagnostík jednej stratégie.
+Po váhovom filtri a normalizácii sa negarantuje zachovanie pôvodného optima.
+
+Pri následných oknách sa najprv vyberú iba ceny striktne po ľavej hranici;
+prvá ponechaná cena slúži ako referencia a výnosy začínajú až ďalšou seansou.
+Nevyužíva sa teda cena z vylúčenej hranice. Výnimkou je úvodné obdobie,
+kde sa posledná cena 2004 zámerne použije pre prvý výnos 2005.
 
 Etapa 3 pridáva `prepare_data(bundle, config)`: v pamäti opätovne overí všetky
 vybrané akcie, zarovná ich na explicitný XNYS kalendár, ponechá referenčnú
