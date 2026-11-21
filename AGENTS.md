@@ -1,5 +1,57 @@
 # AGENTS.md — Markowitz portfolio optimization and rebalancing backtest
 
+## Mandatory phased workflow for Codex — user approval after EVERY phase
+
+**This section takes precedence over any instructions elsewhere in this file about implementing, downloading, installing, testing, executing or completing the entire project in one go.** The user wants incremental coding and saving, **not automatic validation**.
+
+### Working protocol
+
+1. **Start with Phase 1 ONLY.** Do not create code/files belonging to later phases, even if they are trivial.
+2. For each authorized phase: read the existing repository, add/edit **only that phase's files**, save/commit the completed changes to GitHub on the working branch, and stop.
+3. **Do not run code, scripts, unit tests, notebooks, linters, formatters, dependency installation, data downloaders or full backtests. Do not independently verify correctness.** Write coherent code and tests (in their allocated phase), but **do not execute them**. Git operations needed solely to inspect and save files are fine. Do not claim any unexecuted code works.
+4. After saving the phase, respond briefly **in Slovak** with (a) phase number and completed files, (b) commit reference/link if available, (c) what comes next and (d) the explicit question **"Mám pokračovať ďalšou etapou?"**. **STOP and await an affirmative user response.** Never advance to the next phase without confirmation. A request to modify the current phase is not permission to start another one.
+5. If a phase cannot be completed due to missing data, access or permissions, commit whatever useful source/documentation can be saved, disclose the blocker, and ask whether to continue or adjust that phase. No fabricated data or figures.
+6. Full-download and computation requirements below describe the **end goal and functionality to implement**, not permission to run the workflow. Data must eventually be downloadable automatically by a single scripted command, but while following this phased workflow **write the download code without executing it**. Only a subsequent explicit user request can authorize downloads/runs.
+7. Keep the approved quantitative-finance methodology in this document unchanged unless the user specifically authorizes a modification. Do not create a dashboard.
+
+### Phase 1 — Skeleton and configuration ONLY
+
+Create/update `README.md` (scope, 5 strategies, roadmap, all agreed assumptions, disclaimer that nothing has been run), `config.yaml` (all binding numeric defaults, date window, fee/timing/risk-free settings), `requirements.txt`, `.gitignore`, empty Python package `src/__init__.py` and necessary empty directory placeholders. A concise `PROJECT_PHASES.md` is allowed. **No download, optimizer, backtest, plots, or tests yet.** Commit and ask for approval.
+
+### Phase 2 — Historical universe and download infrastructure
+
+Implement `src/universe.py` and `src/download_data.py` plus data provenance specification/manifests or templates as needed. Code should download stock universe, stock prices and FRED DGS3MO **when run later**, implement the documented 2010 historical-vs-survivors-only selection tiers, availability/IPO/delisting flags, caching and retries. No downloads or real API calls now; no actual results or invented source records. Commit and ask.
+
+### Phase 3 — Cleaning and returns
+
+Implement `src/preprocessing.py`: adjusted price loading/validation, missing-value policy, adjusted total-return proxy interpretation, synchronized dates, daily returns, quality flags and clean saved-data outputs to be generated upon future execution. No data execution. Commit and ask.
+
+### Phase 4 — Markowitz optimizer
+
+Implement `src/optimization.py` with positive-excess convex formulation, the deterministic all-nonpositive-excess contingency, risk-free handling, five-year rolling/initial six-year windows, strict post-optimization `0.0001` stock-weight filter, normalization and mandatory concentration diagnostics. **Do not yet build the backtest.** Commit and ask.
+
+### Phase 5 — Five-strategy backtest engine
+
+Implement `src/backtest.py`: Buy & Hold and monthly/quarterly/semiannual/annual strategies; exact period-end signal and next-session-close execution timing; first 2011 rebalance dates; fixed fee including initial trades; shares/cash accounting; no look-ahead; trades, drift, gross turnover and material-event threshold; outputs generated upon future run. Commit and ask.
+
+### Phase 6 — Metrics and static charts
+
+Implement `src/metrics.py` and `src/plotting.py`: requested return/risk/fees/turnover/concentration summary metrics, period-specific 2011–15/2016–20/2021–25 metrics, four static chart functions and export formatting. No run, no invented completed chart or result CSV. Commit and ask.
+
+### Phase 7 — Orchestration, notebook and interpretation templates
+
+Implement `run_analysis.py` and `analysis.ipynb`, finish `README.md` with **one-command** future downloads + processing + backtest, explain how the run will populate `results/`. Create a **template/generator** for `results/conclusions.md` which will derive quantitative conclusions from results **only when a run is later authorized and actually executed**. Do not write fake numerical results, and do not invoke the command or notebook. Optional benchmark code is outside core scope and should be skipped unless the user explicitly requests it. Commit and ask.
+
+### Phase 8 — Offline test source files ONLY
+
+Write `tests/` with synthetic fixtures and tests for the critical methodology in this AGENTS.md, including timing, fees, strict thresholds, convex optimizer, nonpositive-excess contingency, data-vintage/corporate-action failures, rolling windows, no-look-ahead and metrics. **Save tests without running them**; do not install or invoke pytest. Commit and ask.
+
+### After Phase 8
+
+**Stop.** Report that all agreed code phases are saved but **not executed or validated**, that no real financial data or results have been downloaded/generated, and ask whether the user wants to **separately authorize** a later data-download and execution/validation stage. Never automatically proceed to that stage.
+
+---
+
 ## Mission
 
 Implement a reproducible, academically defensible **Python quantitative-finance research project** investigating:
@@ -197,9 +249,9 @@ Tests must operate offline on small synthetic assets with expected results, incl
 
 1. Inspect the repository first; preserve any existing user code.
 2. Research and acquire the strongest legitimately accessible **historical point-in-time universe and data**, document limitations and sources rather than inventing them.
-3. Implement, install dependencies, run tests, then run the historical experiment **if genuine data access allows**.
-4. Save all actual outputs and charts, with labelled methodology and a conclusion that answers the question. If historical data are insufficient, produce runnable code/tests and a clear blocker report rather than made-up quantitative conclusions.
+3. Implement and commit **only the user-approved phase**. Do **not** install dependencies, execute downloads, run tests, run notebooks or launch the historical experiment unless the user later explicitly requests that separate execution stage.
+4. Implement code that will save actual outputs and charts **when separately authorized to run**, with a conclusion generator that answers the question only from computed data. During the phased coding-only workflow save templates/source, not fabricated outputs; document blockers.
 5. Update README with run commands, assumptions, input provenance, date windows, filter interpretation, warnings (survivorship, delisting, estimates, transaction-cost simplifications), and file descriptions.
-6. Explicitly report what has been completed, any warnings, which downloaded data were used, and which steps could not be executed.
+6. After **each phase**, state the files and commit saved, unexecuted status, known limitations, and ask for permission to continue to the next phase. Never infer authorization.
 
 **Do not change user-approved parameters without saying so. Do not add unrelated features or a dashboard.**
