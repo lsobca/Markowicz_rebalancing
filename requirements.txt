@@ -1,0 +1,15 @@
+# Proposed bounded ranges; neither installed nor compatibility-verified.
+numpy>=1.26,<3
+pandas>=2.2,<3
+scipy>=1.12,<2
+PyYAML>=6.0,<7
+requests>=2.31,<3
+lxml>=5,<7
+yfinance>=0.2.51,<1.0
+exchange_calendars>=4.7,<5
+cvxpy>=1.5,<2
+clarabel>=0.9,<1
+matplotlib>=3.8,<4
+jupyterlab>=4,<5
+nbformat>=5.10,<6
+pytest>=8,<9
