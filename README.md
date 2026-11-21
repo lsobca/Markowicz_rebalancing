@@ -4,13 +4,14 @@ Python výskumný projekt: ako frekvencia opakovaného odhadu Markowitzových v�
 spolu s rebalansovaním ovplyvňuje výnos, riziko a náklady v rokoch 2011–2025.
 Autoritatívna metodika a etapový postup sú v [AGENTS.md](AGENTS.md).
 
-**Stav: etapa 5 — kostra, dátové moduly, optimalizátor a backtest engine.
+**Stav: etapa 6 — dátové moduly, optimalizátor, backtest, metriky a grafické funkcie.
 Žiadny analytický kód, downloader, test,
 notebook, inštalácia závislostí, sťahovanie finančných dát ani backtest neboli
 spustené. Konfigurácia a závislosti nie sú validačne overené. Výsledky neexistujú.**
 Podrobnosti cache a manifestov sú v [proveniencii](data/provenance/README.md).
 Moduly `src/universe.py`, `src/download_data.py`, `src/preprocessing.py`
-a `src/optimization.py`, spolu s `src/backtest.py`, zatiaľ neboli spustené
+a `src/optimization.py`, spolu s `src/backtest.py`, `src/metrics.py`
+a `src/plotting.py`, zatiaľ neboli spustené
 ani syntaxou či testami overené. Príkaz na kompletné budúce spustenie pribudne až v etape 7; projekt zatiaľ
 nie je spustiteľný. Žiadny dashboard, web ani GUI nie sú súčasťou zadania.
 
@@ -203,6 +204,24 @@ HHI = sum(weight²), aj časové súhrny. Nestabilné odhady priemerov, šum a
 neobmedzené váhy môžu viesť k extrémnej koncentrácii, najmä mesačne.
 
 ## Budúce výsledky a interpretácia
+
+Etapa 6 pridáva `calculate_metrics(result, risk_free, config)` a samostatné
+funkcie `plot_growth`, `plot_risk_return`, `plot_drawdowns`, `plot_weight_evolution`.
+Export je výlučne explicitný cez `export_metrics` a `export_figures`; tieto
+funkcie zatiaľ neboli spustené a neexistujú výsledné CSV ani obrázky.
+CSV používa UTF-8, ISO dátumy, desatinné zlomky pre výnosy a prázdne polia
+pre nedefinované metriky. Realizovaný Sharpe je priemer denných excess výnosov
+delený ich výberovou smerodajnou odchýlkou, krát sqrt(252); nulový menovateľ
+znamená nedefinovanú hodnotu s explicitným stavom. Maximálny drawdown v tabuľke
+je kladná veľkosť straty, zatiaľ čo grafické krivky sú nekladné.
+
+Koncentrácia sa sumarizuje osobitne z denných skutočných váh a zo signálových
+cieľov. Podperióda bez signálu má prázdne signálové súhrny, nie fiktívny signál.
+Graf riziko/výnos porovnáva anualizovanú volatilitu s čistým CAGR. Graf váh
+používa spoločný výber najvýznamnejších akcií podľa priemernej pozorovanej
+váhy v celom období; toto spätné poradie slúži iba na zobrazenie, nikdy na
+výber investičného univerza. Zvyšok tvorí „Other“, hotovosť je samostatná.
+Všetky grafy uvádzajú survivors-only označenie, poplatok a režim sadzby.
 
 Povinné metriky: konečná hodnota, celkový čistý výnos, CAGR, anualizovaná
 volatilita, realizovaný Sharpe, maximálny drawdown, tri počty udalostí,

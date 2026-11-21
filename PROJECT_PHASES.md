@@ -13,7 +13,8 @@ vyžaduje výslovné potvrdenie používateľa podľa AGENTS.md.
    regularizácia, okná, lagovaná sadzba, núdzové pravidlo, filter a koncentrácia.
 5. **Napísané, nespustené:** päť stratégií, next-close exekúcie,
    účtovanie po poplatkoch, nezáporná hotovosť, drift a oddelené počty/obrat.
-6. Metriky, podperiódy a štyri statické grafy.
+6. **Napísané, nespustené:** metriky, správne počiatočné hodnoty podperiód,
+   koncentrácia, štyri statické grafické funkcie a explicitný CSV/PNG export.
 7. Orchestrácia, notebook a generátor záverov; budúce spustenie jedným príkazom.
 8. Zdrojové súbory offline testov so syntetickými vstupmi, bez spustenia.
 
