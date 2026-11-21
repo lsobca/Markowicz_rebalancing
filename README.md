@@ -4,7 +4,7 @@ Python výskumný projekt: ako frekvencia opakovaného odhadu Markowitzových v�
 spolu s rebalansovaním ovplyvňuje výnos, riziko a náklady v rokoch 2011–2025.
 Autoritatívna metodika a etapový postup sú v [AGENTS.md](AGENTS.md).
 
-**Stav: etapa 6 — dátové moduly, optimalizátor, backtest, metriky a grafické funkcie.
+**Stav: etapa 7 — moduly, orchestrácia, notebook a generátor záverov sú napísané.
 Žiadny analytický kód, downloader, test,
 notebook, inštalácia závislostí, sťahovanie finančných dát ani backtest neboli
 spustené. Konfigurácia a závislosti nie sú validačne overené. Výsledky neexistujú.**
@@ -12,8 +12,57 @@ Podrobnosti cache a manifestov sú v [proveniencii](data/provenance/README.md).
 Moduly `src/universe.py`, `src/download_data.py`, `src/preprocessing.py`
 a `src/optimization.py`, spolu s `src/backtest.py`, `src/metrics.py`
 a `src/plotting.py`, zatiaľ neboli spustené
-ani syntaxou či testami overené. Príkaz na kompletné budúce spustenie pribudne až v etape 7; projekt zatiaľ
-nie je spustiteľný. Žiadny dashboard, web ani GUI nie sú súčasťou zadania.
+ani syntaxou či testami overené. Ani `run_analysis.py` a `analysis.ipynb`
+neboli spustené. Workflow je implementovaný, jeho funkčnosť zatiaľ nebola overená.
+Žiadny dashboard, web ani GUI nie sú súčasťou zadania.
+
+## Budúce spustenie — až po samostatnom povolení
+
+Z koreňa repozitára `Markowicz_rebalancing`, v prostredí Python 3.10 alebo
+novšom (konkrétna kompatibilita neoverená), najprv pripravte závislosti:
+
+```sh
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+```
+
+Potom jediný príkaz vykoná sťahovanie, preprocessing, päť backtestov,
+metriky, štyri grafy a generovanie záverov:
+
+```sh
+python run_analysis.py
+```
+
+Žiadny z týchto príkazov zatiaľ nebol vykonaný. Netreba ručne pripravovať CSV.
+Predvolené výsledky idú do `results/`. Skript odmietne existujúce výstupné
+súbory; ďalšiemu behu zvoľte nový adresár cez `--output`. Zachované `.gitkeep`
+neprekážajú. Chyba skončí nenulovým exit kódom a stavom `failed` v manifeste;
+prípadné čiastočné výstupy sa nesmú považovať za dokončený výsledok.
+
+Citlivostné scenáre majú povinne oddelený adresár, napríklad:
+
+```sh
+python run_analysis.py --fee-rate 0 --output results_zero_fee
+python run_analysis.py --rf-mode zero-sensitivity --output results_zero_rf
+```
+
+Tieto scenáre nenahrádzajú primárny beh. `--refresh` vyžiada novú dátovú
+verziu; inak sa používa overená cache. Výstupný a cache priečinok sa riešia
+voči priečinku zvoleného `--config` súboru. Historické režimy bez overeného
+adaptéra stále explicitne zlyhajú, nikdy sa samy neprepnú na aktuálnu vzorku.
+
+`analysis.ipynb` otvárajte z koreňa repozitára. Predvolene iba číta dokončené
+výsledky a kontroluje ich SHA-256 podľa `run_manifest.json`. Bez výsledkov
+skončí vysvetlením, nie sťahovaním. Voliteľná bunka s workflow má
+`RUN_DOWNLOAD_AND_BACKTEST = False`; zmeniť ju treba až po osobitnom povolení.
+
+Okrem ôsmich povinných CSV vzniknú `events.csv`, `schedule.csv`,
+`drawdown_curves.csv` a `risk_free_alignment.csv`. `run_manifest.json`
+obsahuje účinnú konfiguráciu, odkaz na dátový manifest, stav a SHA-256
+výstupov. `conclusions.md` vznikne až po backteste a metrikách, s kvantifikáciou
+výsledkov, podperiód, nákladov a koncentrácie aj povinnými obmedzeniami.
+Notebook ani skript neinštalujú závislosti a nespúšťajú testy automaticky.
 
 ## Päť nezávislých portfólií
 

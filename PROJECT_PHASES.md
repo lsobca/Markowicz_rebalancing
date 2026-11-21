@@ -15,7 +15,8 @@ vyžaduje výslovné potvrdenie používateľa podľa AGENTS.md.
    účtovanie po poplatkoch, nezáporná hotovosť, drift a oddelené počty/obrat.
 6. **Napísané, nespustené:** metriky, správne počiatočné hodnoty podperiód,
    koncentrácia, štyri statické grafické funkcie a explicitný CSV/PNG export.
-7. Orchestrácia, notebook a generátor záverov; budúce spustenie jedným príkazom.
+7. **Napísané, nespustené:** orchestrácia, notebook bez výstupov,
+   generátor záverov, manifest behu a návod na budúce spustenie jedným príkazom.
 8. Zdrojové súbory offline testov so syntetickými vstupmi, bez spustenia.
 
 Po etape 8 sa implementácia zastaví. Inštalácia, testovanie, sťahovanie dát
