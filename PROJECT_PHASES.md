@@ -1,6 +1,7 @@
 # Postup implementácie
 
-Každá etapa sa uloží do samostatného commitu na pracovnej vetve. Ďalšia etapa
+Každá etapa sa uloží do samostatného commitu priamo na vetve `main`
+podľa aktualizovaného pokynu používateľa. Ďalšia etapa
 vyžaduje výslovné potvrdenie používateľa podľa AGENTS.md.
 
 1. **Pripravené:** kostra, README, konfigurácia, závislosti a prázdne adresáre.

@@ -188,8 +188,14 @@ nie schopnosť Markowitza prekonať široký trh. SPY total-return proxy alebo
 limity pokusov a grafické nastavenia. `requirements.txt` používa ohraničené
 rozsahy, vrátane `exchange_calendars>=4.7,<5`; kompatibilita nebola overená.
 CLARABEL je pevne zvolený solver, verzia balíka má ohraničený rozsah namiesto
-neovereného presného pinu. `src/__init__.py` je prázdny. Lokálne dáta,
-výsledky a tajné premenné prostredia sa necommitujú.
+neovereného presného pinu. `src/__init__.py` je prázdny. Surové cenové dáta,
+spracované dátové cache a tajné premenné prostredia sa necommitujú.
+Celý `results/` vrátane CSV, záverov a grafov sa môže commitovať.
+Pre reprodukovateľnosť sa commitujú aj záznamy v `data/universe/`
+(zoznamy a vylúčenia), `data/manifests/` a `data/provenance/`
+(zdroje, dátumy stiahnutia a kontrolné súčty). Budúce moduly majú tieto
+záznamy ukladať do uvedených adresárov; aktuálne ešte nie sú vytvorené.
+Ďalšie etapy sa ukladajú priamo na vetvu `main` podľa pokynu používateľa.
 
 [Etapový plán](PROJECT_PHASES.md): kostra → zdroje a sťahovanie → čistenie →
 optimalizácia → backtest → metriky/grafy → orchestrácia/notebook → zdrojové

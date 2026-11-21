@@ -16,11 +16,15 @@ htmlcov/
 build/
 dist/
 /data/**
+# Keep reproducibility records in these dedicated directories.
+!/data/universe/
+!/data/universe/**
+!/data/manifests/
+!/data/manifests/**
+!/data/provenance/
+!/data/provenance/**
 !/data/raw/
 !/data/raw/.gitkeep
 !/data/processed/
 !/data/processed/.gitkeep
-/results/**
-!/results/.gitkeep
-!/results/graphs/
-!/results/graphs/.gitkeep
+# Track all results, including CSV tables, conclusions and static graphs.
