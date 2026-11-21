@@ -4,10 +4,13 @@ Python výskumný projekt: ako frekvencia opakovaného odhadu Markowitzových v�
 spolu s rebalansovaním ovplyvňuje výnos, riziko a náklady v rokoch 2011–2025.
 Autoritatívna metodika a etapový postup sú v [AGENTS.md](AGENTS.md).
 
-**Stav: etapa 1 — iba kostra a konfigurácia. Žiadny analytický kód, test,
+**Stav: etapa 2 — kostra, konfigurácia a zdrojový kód sťahovania/univerza.
+Žiadny analytický kód, downloader, test,
 notebook, inštalácia závislostí, sťahovanie finančných dát ani backtest neboli
 spustené. Konfigurácia a závislosti nie sú validačne overené. Výsledky neexistujú.**
-Príkaz na kompletné budúce spustenie pribudne až v etape 7; projekt zatiaľ
+Podrobnosti cache a manifestov sú v [proveniencii](data/provenance/README.md).
+Moduly `src/universe.py` a `src/download_data.py` zatiaľ neboli spustené
+ani syntaxou či testami overené. Príkaz na kompletné budúce spustenie pribudne až v etape 7; projekt zatiaľ
 nie je spustiteľný. Žiadny dashboard, web ani GUI nie sú súčasťou zadania.
 
 ## Päť nezávislých portfólií
@@ -194,7 +197,8 @@ Celý `results/` vrátane CSV, záverov a grafov sa môže commitovať.
 Pre reprodukovateľnosť sa commitujú aj záznamy v `data/universe/`
 (zoznamy a vylúčenia), `data/manifests/` a `data/provenance/`
 (zdroje, dátumy stiahnutia a kontrolné súčty). Budúce moduly majú tieto
-záznamy ukladať do uvedených adresárov; aktuálne ešte nie sú vytvorené.
+záznamy ukladať do uvedených adresárov. Zatiaľ existuje iba dokumentácia
+a prázdna šablóna proveniencie, nie skutočné zdrojové záznamy.
 Ďalšie etapy sa ukladajú priamo na vetvu `main` podľa pokynu používateľa.
 
 [Etapový plán](PROJECT_PHASES.md): kostra → zdroje a sťahovanie → čistenie →

@@ -5,7 +5,8 @@ podľa aktualizovaného pokynu používateľa. Ďalšia etapa
 vyžaduje výslovné potvrdenie používateľa podľa AGENTS.md.
 
 1. **Pripravené:** kostra, README, konfigurácia, závislosti a prázdne adresáre.
-2. Historické univerzum a infraštruktúra sťahovania; zdroje a proveniencia.
+2. **Napísané, nespustené:** aktuálne univerzum a infraštruktúra sťahovania;
+   cache a proveniencia. Historické režimy explicitne zlyhajú bez overeného zdroja.
 3. Čistenie, výnosy, pokrytie a oneskorenie bezrizikovej sadzby.
 4. Markowitz optimalizácia, okná, filter a koncentrácia.
 5. Päť stratégií, časovanie, účtovanie, poplatky a obrat.
