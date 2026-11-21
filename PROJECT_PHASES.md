@@ -17,7 +17,8 @@ vyžaduje výslovné potvrdenie používateľa podľa AGENTS.md.
    koncentrácia, štyri statické grafické funkcie a explicitný CSV/PNG export.
 7. **Napísané, nespustené:** orchestrácia, notebook bez výstupov,
    generátor záverov, manifest behu a návod na budúce spustenie jedným príkazom.
-8. Zdrojové súbory offline testov so syntetickými vstupmi, bez spustenia.
+8. **Napísané, nespustené:** zdrojové súbory offline testov so syntetickými
+   vstupmi a blokovanou sieťou. Úspešnosť testov nie je overená.
 
 Po etape 8 sa implementácia zastaví. Inštalácia, testovanie, sťahovanie dát
 aj výpočty vyžadujú samostatné povolenie. Zatiaľ nič z toho neprebehlo.

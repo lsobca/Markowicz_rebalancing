@@ -4,7 +4,7 @@ Python výskumný projekt: ako frekvencia opakovaného odhadu Markowitzových v�
 spolu s rebalansovaním ovplyvňuje výnos, riziko a náklady v rokoch 2011–2025.
 Autoritatívna metodika a etapový postup sú v [AGENTS.md](AGENTS.md).
 
-**Stav: etapa 7 — moduly, orchestrácia, notebook a generátor záverov sú napísané.
+**Stav: etapa 8 — všetky dohodnuté zdrojové etapy vrátane offline testov sú napísané.
 Žiadny analytický kód, downloader, test,
 notebook, inštalácia závislostí, sťahovanie finančných dát ani backtest neboli
 spustené. Konfigurácia a závislosti nie sú validačne overené. Výsledky neexistujú.**
@@ -63,6 +63,16 @@ obsahuje účinnú konfiguráciu, odkaz na dátový manifest, stav a SHA-256
 výstupov. `conclusions.md` vznikne až po backteste a metrikách, s kvantifikáciou
 výsledkov, podperiód, nákladov a koncentrácie aj povinnými obmedzeniami.
 Notebook ani skript neinštalujú závislosti a nespúšťajú testy automaticky.
+
+## Testy — zatiaľ iba zdrojové súbory
+
+`tests/` obsahuje syntetické offline testy konfigurácie, účtovania, kalendára,
+preprocessingu, optimalizátora, zdrojov a metrík vrátane podperiód.
+Podrobnosti a hranice pokrytia sú v [tests/README.md](tests/README.md).
+Po osobitnom povolení validácie je určený príkaz `python -m pytest tests`.
+**Testy neboli spustené a ich úspešnosť sa netvrdí.** Implementačné etapy
+sú týmto ukončené; sťahovanie, výpočty, testovanie a opravy na základe
+ich výsledkov tvoria samostatne povoľovanú nasledujúcu fázu.
 
 ## Päť nezávislých portfólií
 
