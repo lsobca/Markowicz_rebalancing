@@ -7,7 +7,8 @@ vyžaduje výslovné potvrdenie používateľa podľa AGENTS.md.
 1. **Pripravené:** kostra, README, konfigurácia, závislosti a prázdne adresáre.
 2. **Napísané, nespustené:** aktuálne univerzum a infraštruktúra sťahovania;
    cache a proveniencia. Historické režimy explicitne zlyhajú bez overeného zdroja.
-3. Čistenie, výnosy, pokrytie a oneskorenie bezrizikovej sadzby.
+3. **Napísané, nespustené:** validácia cien, synchronizácia, výnosy,
+   anualizácia, report kvality a oneskorenie bezrizikovej sadzby.
 4. Markowitz optimalizácia, okná, filter a koncentrácia.
 5. Päť stratégií, časovanie, účtovanie, poplatky a obrat.
 6. Metriky, podperiódy a štyri statické grafy.

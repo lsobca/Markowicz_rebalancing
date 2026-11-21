@@ -4,12 +4,12 @@ Python výskumný projekt: ako frekvencia opakovaného odhadu Markowitzových v�
 spolu s rebalansovaním ovplyvňuje výnos, riziko a náklady v rokoch 2011–2025.
 Autoritatívna metodika a etapový postup sú v [AGENTS.md](AGENTS.md).
 
-**Stav: etapa 2 — kostra, konfigurácia a zdrojový kód sťahovania/univerza.
+**Stav: etapa 3 — kostra, konfigurácia, sťahovanie/univerzum a preprocessing.
 Žiadny analytický kód, downloader, test,
 notebook, inštalácia závislostí, sťahovanie finančných dát ani backtest neboli
 spustené. Konfigurácia a závislosti nie sú validačne overené. Výsledky neexistujú.**
 Podrobnosti cache a manifestov sú v [proveniencii](data/provenance/README.md).
-Moduly `src/universe.py` a `src/download_data.py` zatiaľ neboli spustené
+Moduly `src/universe.py`, `src/download_data.py` a `src/preprocessing.py` zatiaľ neboli spustené
 ani syntaxou či testami overené. Príkaz na kompletné budúce spustenie pribudne až v etape 7; projekt zatiaľ
 nie je spustiteľný. Žiadny dashboard, web ani GUI nie sú súčasťou zadania.
 
@@ -115,6 +115,24 @@ Aj drobné obchody patria do účtovania, obratu a poplatkov. Samostatný overri
 `fee_rate: 0` bude slúžiť iba ako označená citlivostná analýza.
 
 ## Odhady, bezriziková sadzba a optimalizácia
+
+Etapa 3 pridáva `prepare_data(bundle, config)`: v pamäti opätovne overí všetky
+vybrané akcie, zarovná ich na explicitný XNYS kalendár, ponechá referenčnú
+cenu poslednej seansy 2004 a vypočíta jednoduché výnosy od prvej seansy 2005.
+Ceny sa nikdy nedopĺňajú. Neplatná vybraná akcia vyvolá `PriceValidationError`
+s tabuľkou `.report`; nevyraďuje sa potichu. Report obsahuje pokrytie
+2005–2010 a 2011–2025, chýbajúce/neplatné ceny a referenčnú seansu.
+Pomocné funkcie poskytujú ročný aritmetický priemer, výberovú kovarianciu,
+volatilitu a denné excess výnosy. Výber tréningových okien patrí do etapy 4.
+Žiadny report ani výstupný súbor zatiaľ nevznikol.
+
+Zarovnanie FRED uchováva dátum pozorovania, predpokladanej dostupnosti
+a vek sadzby. Dátum dostupnosti je dátum pozorovania plus jeden pracovný
+deň podľa USFederalHolidayCalendar; nasleduje iba spätné časové priradenie.
+Denná sadzba je označená seansou, na ktorej končí príslušný denný výnos.
+Ak pre prvú seansu neexistuje skoršia dostupná sadzba, spracovanie zlyhá.
+Ide o stanovený predpoklad publikačného oneskorenia, nie o overené historické
+časy zverejnenia; aktuálne stiahnutá verzia FRED nie je historický archív revízií.
 
 Úvodné tréningové obdobie je 2005–2010 vrátane (šesť rokov), ďalšie okná
 sú presne päť kalendárnych rokov: pre signál D platí
